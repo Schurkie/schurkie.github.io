@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{site.title}}</title>
+<meta name="description" content="{{site.description}}">
+<link rel="canonical" href="{{site.url}}">
+<meta name="theme-color" content="#0AB0B0">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="og:title" content="{{site.title}}">
+<meta property="og:description" content="{{site.description}}">
+<meta property="og:url" content="{{site.url}}">
+<meta property="og:image" content="{{site.ogImage}}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{{site.ogImageAlt}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{site.title}}">
+<meta name="twitter:description" content="{{site.description}}">
+<meta name="twitter:image" content="{{site.ogImage}}">
+<link rel="preload" href="assets/fonts/Fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.className += ' js';</script>
+<script type="application/ld+json">
+{{{jsonldString}}}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">{{ui.skip}}</a>
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="#top" aria-label="{{ui.home}}">
+      <img src="assets/img/logo-192.png" width="40" height="40" alt="">
+      <span>{{site.name}}</span>
+    </a>
+    <nav class="nav" aria-label="{{ui.navLabel}}">
+      {{#each ui.nav}}<a href="#{{id}}">{{label}}</a>{{/each}}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" data-guide="hero" data-say="{{floaty.hero}}" data-pose="wave" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-stage" id="hero-stage" data-gag-say="{{floaty.gagParachute}}">
+        <p class="bubble hero-bubble" id="hero-bubble">{{hero.bubble}}</p>
+        <div class="hero-floaty">
+          <img class="hero-fallback" src="assets/img/floaty-hero.svg" width="420" height="420" alt="{{hero.floatyAlt}}">
+          <div class="floaty-host" id="hero-host" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="eyebrow">{{hero.eyebrow}}</p>
+        <h1 id="hero-title">{{hero.title}}</h1>
+        <p class="lead">{{hero.lead}}</p>
+        <p class="sub">{{hero.sub}}</p>
+        <div class="cta">
+          <a class="play" data-avoid href="{{site.playUrl}}"><img src="assets/badges/google-play-en.png" width="646" height="250" alt="{{ui.playBadgeAlt}}"></a>
+          <div class="cta-buttons">
+            <a class="btn btn-primary" data-avoid href="#film">{{ui.watchFilm}}</a>
+            <button class="btn btn-ghost js-only" data-avoid type="button" id="tour-start">{{ui.takeTour}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="film" data-guide="film" data-say="{{floaty.film}}" data-pose="welcome" aria-labelledby="film-title">
+    <div class="wrap">
+      <h2 id="film-title">{{film.title}}</h2>
+      <p class="section-lead">{{film.lead}}</p>
+      <div class="video-frame" data-avoid>
+        <video controls playsinline preload="none" width="1280" height="720" poster="{{film.poster}}" aria-label="{{film.label}}">
+          <source src="{{film.src}}" type="video/mp4">
+          <p>{{film.fallback}} <a href="{{film.src}}">{{film.fallbackLink}}</a>.</p>
+        </video>
+      </div>
+      <details class="scenes">
+        <summary>{{film.scenesTitle}}</summary>
+        <ol>
+          {{#each film.scenes}}<li>{{this}}</li>
+          {{/each}}
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="what" data-guide="what" data-say="{{floaty.what}}" data-pose="wow" aria-labelledby="what-title">
+    <div class="wrap what-grid">
+      <div class="what-text">
+        <h2 id="what-title">{{what.title}}</h2>
+        <p>{{what.p1}}</p>
+        <p>{{what.p2}}</p>
+        <p>{{what.p3}}</p>
+      </div>
+      <figure class="shot">
+        <img src="{{what.image}}" width="720" height="1600" alt="{{what.imageAlt}}" loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <div data-guide="features" data-say="{{floaty.features}}" data-pose="happy">
+        <h2 id="features-title">{{features.title}}</h2>
+        <p class="section-lead">{{features.lead}}</p>
+      </div>
+      {{#each features.items}}
+      <article class="feature" id="f-{{id}}" data-guide="feature-{{id}}" data-say="{{say}}" data-pose="{{pose}}">
+        <div class="feature-text">
+          <h3>{{title}}
+            {{#if isAdv}}<span class="tag" title="{{ui.advancedTip}}">{{ui.advanced}}</span>{{/if}}
+            {{#if isAdvPart}}<span class="tag tag-part" title="{{ui.advancedTip}}">{{ui.advancedPart}}</span>{{/if}}
+          </h3>
+          <dl class="www">
+            <div><dt>{{ui.whatLabel}}</dt><dd>{{what}}</dd></div>
+            <div><dt>{{ui.whyLabel}}</dt><dd>{{why}}</dd></div>
+            <div><dt>{{ui.exampleLabel}}</dt><dd>{{example}}</dd></div>
+          </dl>
+        </div>
+        {{#if image}}
+        <div class="feature-shots">
+          <figure class="shot"><img src="{{image}}" width="{{imageW}}" height="{{imageH}}" alt="{{imageAlt}}" loading="lazy" decoding="async"></figure>
+          {{#if image2}}<figure class="shot"><img src="{{image2}}" width="720" height="1600" alt="{{image2Alt}}" loading="lazy" decoding="async"></figure>{{/if}}
+        </div>
+        {{/if}}
+      </article>
+      {{/each}}
+      <div class="more" data-guide="more" data-say="{{floaty.more}}" data-pose="welcome">
+        <h3>{{features.moreTitle}}</h3>
+        <ul class="chips">
+          {{#each features.more}}<li>{{label}}{{#if isAdv}} <span class="tag" title="{{ui.advancedTip}}">{{ui.advanced}}</span>{{/if}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="modes" data-guide="modes" data-say="{{floaty.modes}}" data-pose="welcome" data-gag-say="{{floaty.gagBungee}}" aria-labelledby="modes-title">
+    <div class="wrap">
+      <h2 id="modes-title">{{modes.title}}</h2>
+      <p class="section-lead">{{modes.lead}}</p>
+      <div class="cards">
+        <article class="card card-simple">
+          <p class="card-badge">{{ui.freeLabel}}</p>
+          <h3>{{modes.simple.name}}</h3>
+          <p class="card-tag">{{modes.simple.tagline}}</p>
+          <ul>
+            {{#each modes.simple.items}}<li>{{this}}</li>
+            {{/each}}
+          </ul>
+          <p class="card-note">{{modes.simple.note}}</p>
+        </article>
+        <article class="card card-advanced">
+          <p class="card-badge card-badge-adv">{{modes.advanced.name}}</p>
+          <h3>{{modes.advanced.name}}</h3>
+          <p class="card-tag">{{modes.advanced.tagline}}</p>
+          <p class="card-price">{{modes.advanced.price}}</p>
+          <ul>
+            {{#each modes.advanced.items}}<li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </article>
+      </div>
+      <p class="footnote">{{modes.footnote}}</p>
+    </div>
+  </section>
+
+  <section class="section" id="permissions" data-guide="permissions" data-say="{{floaty.permissions}}" data-pose="rest" aria-labelledby="perm-title">
+    <div class="wrap">
+      <h2 id="perm-title">{{permissions.title}}</h2>
+      <p class="section-lead">{{permissions.lead}}</p>
+      <ul class="perms">
+        {{#each permissions.items}}<li><strong>{{name}}</strong> {{text}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="privacy" data-guide="privacy" data-say="{{floaty.privacy}}" data-pose="happy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <h2 id="privacy-title">{{privacy.title}}</h2>
+      <p class="section-lead">{{privacy.lead}}</p>
+      <dl class="prows" aria-label="{{privacy.tableCaption}}">
+        {{#each privacy.rows}}
+        <div class="prow">
+          <dt>{{data}}</dt>
+          <dd><span class="prow-label">{{privacy.colStays}}</span> <strong>{{stays}}</strong></dd>
+          <dd><span class="prow-label">{{privacy.colLeaves}}</span> {{leaves}}</dd>
+        </div>
+        {{/each}}
+      </dl>
+      <p class="site-privacy">{{privacy.site}}</p>
+      <p class="links">
+        <a class="btn btn-ghost" href="{{site.privacyUrl}}">{{privacy.privacyLink}}</a>
+        <a class="btn btn-ghost" href="{{site.termsUrl}}">{{privacy.termsLink}}</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="faq" data-guide="faq" data-say="{{floaty.faq}}" data-pose="wow" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">{{faq.title}}</h2>
+      <p class="section-lead">{{faq.lead}}</p>
+      <div class="faq-list">
+        {{#each faq.items}}
+        <details class="qa" id="q-{{id}}">
+          <summary><span>{{q}}</span></summary>
+          <div class="qa-body">
+            {{#if isOl}}<ol>{{#each a}}<li>{{this}}</li>{{/each}}</ol>{{/if}}
+            {{#if isUl}}<ul>{{#each a}}<li>{{this}}</li>{{/each}}</ul>{{/if}}
+            {{#if isP}}{{#each a}}<p>{{this}}</p>{{/each}}{{/if}}
+          </div>
+        </details>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+
+  <section class="section closing" id="closing" data-guide="closing" data-say="{{floaty.closing}}" data-pose="thumbsUp" aria-labelledby="closing-title">
+    <div class="wrap closing-box">
+      <h2 id="closing-title">{{closing.title}}</h2>
+      <p class="section-lead">{{closing.lead}}</p>
+      <p class="closing-badge"><a class="play" data-avoid href="{{site.playUrl}}"><img src="assets/badges/google-play-en.png" width="646" height="250" alt="{{ui.playBadgeAlt}}" loading="lazy"></a></p>
+      <p>{{closing.setup}}</p>
+      <p>{{closing.feedback}}</p>
+      <p><a class="btn btn-primary" data-avoid href="mailto:{{site.mail}}">{{closing.mailLabel}}</a></p>
+      <p class="tagline">{{closing.tagline}}</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-links">
+      <a href="{{site.privacyUrl}}">{{privacy.privacyLink}}</a>
+      <a href="{{site.termsUrl}}">{{privacy.termsLink}}</a>
+      <a href="mailto:{{site.mail}}">{{footer.contact}}: {{site.mail}}</a>
+    </p>
+    <p>{{footer.disclaimer}}</p>
+    <p>{{footer.trademark}}</p>
+  </div>
+</footer>
+
+<!-- Floaty, the guide. Everything in here is added to the page only when JavaScript runs. -->
+<div class="guide js-only" id="guide" hidden
+     data-tour="{{ui.takeTour}}" data-next="{{ui.next}}" data-top="{{ui.backToTop}}"
+     data-hide="{{ui.hideFloaty}}" data-show="{{ui.showFloaty}}" data-floaty-label="{{ui.floatyNextLabel}}">
+  <div class="bubble guide-bubble" id="guide-bubble" hidden>
+    <p aria-hidden="true"><span class="t-shown"></span><span class="t-rest"></span></p>
+  </div>
+  <div class="guide-bar" id="guide-bar">
+    <button class="gbtn" type="button" id="guide-next">{{ui.takeTour}}</button>
+    <button class="gx" type="button" id="guide-hide" aria-label="{{ui.hideFloaty}}" title="{{ui.hideFloaty}}"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <button class="guide-body" type="button" id="guide-floaty" aria-label="{{ui.floatyNextLabel}}">
+    <span class="floaty-host" id="guide-host" aria-hidden="true"></span>
+  </button>
+</div>
+<button class="show-floaty js-only" type="button" id="guide-show" hidden>{{ui.showFloaty}}</button>
+
+<script src="assets/js/floaty.js" defer></script>
+<script src="assets/js/gags.js" defer></script>
+<script src="assets/js/guide.js" defer></script>
+</body>
+</html>

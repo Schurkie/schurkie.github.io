@@ -1,0 +1,363 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "site": {
+    "name": "Floatify Notification",
+    "url": "https://schurkie.github.io/FloatifyNotifications/",
+    "title": "Floatify Notification – messages that float until you're done",
+    "description": "Floatify Notification turns chat messages into small floating bubbles over your other apps. Read, reply, snooze, dock. Free to start on Android.",
+    "ogImage": "https://schurkie.github.io/FloatifyNotifications/assets/img/og-image.png",
+    "ogImageAlt": "Floaty, the Floatify mascot, next to the text Floatify Notification: messages that float until you're done.",
+    "playUrl": "https://play.google.com/store/apps/details?id=com.bubblefication.bubblefication",
+    "mail": "schurkiedev@gmail.com",
+    "privacyUrl": "/privacy_policy.html",
+    "termsUrl": "/terms.html"
+  },
+  "ui": {
+    "skip": "Skip to the content",
+    "home": "Floatify Notification, back to the top",
+    "navLabel": "Sections",
+    "nav": [
+      {"id": "film", "label": "Film"},
+      {"id": "features", "label": "Features"},
+      {"id": "modes", "label": "Simple or Advanced"},
+      {"id": "privacy", "label": "Privacy"},
+      {"id": "faq", "label": "FAQ"}
+    ],
+    "playBadgeAlt": "Get it on Google Play",
+    "watchFilm": "Watch the film",
+    "takeTour": "Take the tour",
+    "next": "Next",
+    "backToTop": "Back to top",
+    "hideFloaty": "Hide Floaty",
+    "showFloaty": "Show Floaty",
+    "floatyNextLabel": "Floaty: go to the next section",
+    "advanced": "Advanced",
+    "advancedPart": "Call and block: Advanced",
+    "advancedTip": "Part of Advanced mode",
+    "freeLabel": "Free",
+    "whatLabel": "What",
+    "whyLabel": "Why",
+    "exampleLabel": "Example"
+  },
+  "hero": {
+    "eyebrow": "For Android",
+    "title": "Floatify Notification",
+    "lead": "Messages that float until you're done with them.",
+    "sub": "Floatify turns the chat messages you choose into small floating bubbles over your other apps. Read, reply and snooze right from the bubble.",
+    "bubble": "Hi, I'm Floaty! Let me show you around.",
+    "floatyAlt": "Floaty, a friendly round bubble with a face and little hands, waving."
+  },
+  "film": {
+    "title": "See it in action",
+    "lead": "The film shows what a float is, how you answer from it and how you make it yours.",
+    "poster": "media/floatify-promo-long-poster.webp",
+    "src": "media/floatify-promo-long.mp4",
+    "label": "Floatify Notification, the film",
+    "fallback": "Your browser cannot play this video. You can",
+    "fallbackLink": "download the film (MP4)",
+    "scenesTitle": "What happens in the film",
+    "scenes": [
+      "Chat messages come in and disappear.",
+      "Floatify turns every message into a float.",
+      "Open it, read it, reply on the spot.",
+      "One tap opens the chat, or blocks a contact or group.",
+      "Photos come along: tap one, swipe through them all.",
+      "Hold the thumb for a quick reaction.",
+      "Snoozed floats wait in a widget on your home screen.",
+      "Not now? Snooze it, or dock it at the edge.",
+      "Reminders, ideas, to-dos: make your own floats.",
+      "Make it yours. Pick a shape and a motion.",
+      "No time? Start from a ready-made theme.",
+      "Bigger? Faster? Just tap.",
+      "Park floats at the edge, or in a sidebar.",
+      "Your Google Calendar can send floats too.",
+      "A daily backup keeps your floats safe.",
+      "Simple is easy. Advanced is full control."
+    ]
+  },
+  "what": {
+    "title": "What is Floatify?",
+    "p1": "You read a message, think \"I'll get back to that\", and carry on with your day. Sound familiar? Floatify helps you remember to come back to it.",
+    "p2": "Floatify turns selected notifications into small floating bubbles, called floats. They appear over other apps, so you don't have to keep opening your notification shade. You choose what deserves your attention and when to come back to it.",
+    "p3": "Tap a float to read the message. Long message? The content scrolls inside a coloured frame that stays in place. Links in chat messages are tappable on the card.",
+    "imageAlt": "A phone screen with small round floats with emoji floating on top of it, under the caption Reminders that float on top.",
+    "image": "assets/img/shot-01-float-on-top.webp"
+  },
+  "features": {
+    "title": "What Floatify does",
+    "lead": "Each feature in three short lines: what it is, why it helps and an example.",
+    "items": [
+      {
+        "id": "floats",
+        "title": "Messages become floats",
+        "what": "The chat messages from the apps you choose appear as small floating bubbles on top of everything else.",
+        "why": "You see them without opening the notification shade, and they stay until you decide what to do.",
+        "example": "A friend asks \"Are you coming tonight?\" while you are in the middle of a map. The float waits over the map until you have a moment.",
+        "image": "assets/img/shot-02-messages-become-floats.webp",
+        "imageAlt": "A phone screen with several floats, among them a chat bubble and a rocket, under the caption Messages become floats.",
+        "imageW": 720, "imageH": 1600,
+        "say": "Every message becomes a bubble, just like me. It floats until you're done.",
+        "pose": "happy",
+        "adv": false
+      },
+      {
+        "id": "reply",
+        "title": "Reply right from the float",
+        "what": "Tap a float and a card opens with the message and a reply field. It works when the original notification supports quick replies.",
+        "why": "No jumping between apps. When you send your answer, the notification is cleared too.",
+        "example": "Type \"Yes, see you at eight!\" and tap Send, still inside the app you were using.",
+        "image": "assets/img/shot-03-reply-from-float.webp",
+        "imageAlt": "An opened float card with a message from Sam, a reply field with a Send button and a grid of snooze times, under the caption Reply right from the float.",
+        "imageW": 720, "imageH": 1600,
+        "say": "Tap, type, send. You never have to leave your app.",
+        "pose": "wave",
+        "adv": false
+      },
+      {
+        "id": "chat",
+        "title": "One tap to the chat",
+        "what": "A row of icons on the card opens the chat in its own app. Advanced adds optional call and video call buttons, and lets you allow or block floats per chat or group.",
+        "why": "Jump to the whole conversation when a float is not enough, and keep the noisy chats from floating at all.",
+        "example": "A busy group chat keeps pinging. Block the floats of that group and keep the rest.",
+        "image": "assets/img/card-open-chat.webp",
+        "imageAlt": "An opened float card for the contact Anna with a row of round icon buttons for opening the chat, adding to a calendar, sharing, editing and blocking, and buttons to snooze and dismiss.",
+        "imageW": 720, "imageH": 680,
+        "say": "One tap opens the chat. A group that never stops? Block its floats.",
+        "pose": "welcome",
+        "adv": "part"
+      },
+      {
+        "id": "photos",
+        "title": "Photos and quick reactions",
+        "what": "Photos in a message come along on the card: tap one to open it, then swipe through all of them. Hold the thumb to send a quick reaction.",
+        "why": "You see the picture and answer it without opening the chat app.",
+        "example": "Someone sends holiday photos. Swipe through them, hold the thumb and pick a heart.",
+        "say": "Photos come along! Swipe through them, and hold the thumb to react.",
+        "pose": "wow",
+        "adv": false
+      },
+      {
+        "id": "snooze",
+        "title": "Snooze for later",
+        "what": "Not now? Snooze a float for a short break, a custom duration, or a date and time you choose. The Snoozed Floats list shows what is coming back and when.",
+        "why": "The float gets out of your way and returns when you can deal with it.",
+        "example": "Snooze a work message until Monday morning and enjoy your weekend.",
+        "image": "assets/img/shot-05-snooze.webp",
+        "imageAlt": "The opened float card of a chat with a grid of snooze times from one minute to one week, under the caption Snooze for a minute or a week.",
+        "imageW": 720, "imageH": 1600,
+        "say": "Not now? Snooze it. It floats back when you're ready.",
+        "pose": "happy",
+        "adv": false
+      },
+      {
+        "id": "dock",
+        "title": "Dock at the edge",
+        "what": "Park floats at the edge of the screen or in a sidebar, and keep snoozed floats there with a countdown.",
+        "why": "The middle of your screen stays free and nothing gets lost.",
+        "example": "Snooze a reminder for twenty minutes and let it wait at the edge, counting down.",
+        "image": "assets/img/shot-04-dock-on-edge.webp",
+        "imageAlt": "A phone screen with a column of small docked floats along the left edge and one more float on the right edge, under the caption Dock it on the edge.",
+        "imageW": 720, "imageH": 1600,
+        "say": "Park floats at the edge, out of your way.",
+        "pose": "welcome",
+        "adv": true
+      },
+      {
+        "id": "own",
+        "title": "Your own floats, calendar and widget",
+        "what": "Make floats for reminders, ideas and to-dos, or share text to Floatify. Import your Google Calendar events if you like, with a shape per calendar. Snoozed floats can wait in a widget on your home screen.",
+        "why": "Everything you must not forget lives in one place, as floats you can see.",
+        "example": "Share a link from your browser to Floatify and it floats back to you this evening.",
+        "image": "assets/img/shot-06-widget.webp",
+        "imageAlt": "A phone home screen with a Floatify widget listing three snoozed floats, under the caption Snoozed floats at a glance.",
+        "imageW": 720, "imageH": 1600,
+        "say": "Make floats for your own reminders, too. I'll keep them in sight.",
+        "pose": "thumbsUp",
+        "adv": true
+      },
+      {
+        "id": "look",
+        "title": "Make it yours",
+        "what": "Pick a shape (even per app), an emoji or the app icon, an animation, a size, a speed and a transparency. Or start from a ready-made theme: Slider, Buttons, Minimal or Maximal.",
+        "why": "Let the important chats stand out and let the rest stay calm.",
+        "example": "A heart for your partner and the app icon for everyone else.",
+        "image": "assets/img/shot-07-any-emoji.webp",
+        "imageAlt": "The emoji picker of Floatify with a large grid of animals and faces, under the caption Any emoji as your float.",
+        "imageW": 720, "imageH": 1600,
+        "image2": "assets/img/shot-08-make-it-yours.webp",
+        "image2Alt": "The Float appearance settings with colour choices, default shape, animation and transparency, under the caption Make it yours.",
+        "say": "Pick a shape and a motion. Make it yours!",
+        "pose": "happy",
+        "adv": true
+      }
+    ],
+    "moreTitle": "And more",
+    "more": [
+      {"label": "Quiet hours", "adv": true},
+      {"label": "Statistics", "adv": true},
+      {"label": "Grouping with a counter", "adv": true},
+      {"label": "Share files to Floatify", "adv": true},
+      {"label": "Wear OS support", "adv": true},
+      {"label": "Sync between your devices through Google Drive", "adv": true},
+      {"label": "Daily backup to a folder you choose", "adv": false},
+      {"label": "Sound and vibration settings", "adv": false}
+    ]
+  },
+  "modes": {
+    "title": "Simple or Advanced: you choose",
+    "lead": "Floatify has two modes. Start right away with Simple, and switch to Advanced when you want the full toolbox. Both modes remember their own settings, so you can switch whenever you like.",
+    "simple": {
+      "name": "Simple",
+      "tagline": "Free and ready in a minute",
+      "items": [
+        "One switch per app decides which notifications become floats.",
+        "Read, reply, snooze or dismiss straight from the float.",
+        "A calm, consistent look that works from the first minute.",
+        "Sound and vibration settings.",
+        "A short guided setup with Floaty, and a 3-day Advanced trial if you're curious.",
+        "No account needed."
+      ],
+      "note": "Simple is supported by a small ad banner at the bottom of the app."
+    },
+    "advanced": {
+      "name": "Advanced",
+      "tagline": "The full Floatify",
+      "price": "A one-time in-app purchase: no subscription and no ads. Try it free for 3 days.",
+      "items": [
+        "Your own reminders, and floats made from shared text.",
+        "Google Calendar import and synchronization, with a shape per calendar.",
+        "Float synchronization between your devices through Google Drive.",
+        "Grouping by app or calendar, with a counter and message browsing.",
+        "Shape (even per app), emoji or app icon, animation, size, speed and transparency.",
+        "Dock floats at the screen edge or in the sidebar.",
+        "Quiet hours for the moments you want peace.",
+        "Home-screen widgets in light or dark style.",
+        "Allow or block floats per chat or group.",
+        "Optional call and video call buttons for WhatsApp and other chat apps.",
+        "Share files to Floatify and they come along as attachments.",
+        "Statistics and support for your Wear OS watch."
+      ]
+    },
+    "footnote": "You can restore a previous purchase. If you already used Floatify before this purchase option was introduced, you keep access to Advanced. Google synchronization requires linking your Google account."
+  },
+  "permissions": {
+    "title": "Permissions, one step at a time",
+    "lead": "Floatify guides you through the setup. Google connections are optional.",
+    "items": [
+      {"name": "Display over other apps", "text": "lets floats appear above other apps."},
+      {"name": "Notification access", "text": "turns notifications from your chosen apps into floats."},
+      {"name": "Usage access", "text": "helps hide floats in apps you've excluded."},
+      {"name": "Contacts access", "text": "is optional and only used for the call buttons."}
+    ]
+  },
+  "privacy": {
+    "title": "Privacy in short",
+    "lead": "What goes where, in one table. The full text is in the privacy policy.",
+    "tableCaption": "Where your data goes",
+    "colData": "Data",
+    "colStays": "Stays on your device?",
+    "colLeaves": "Leaves your device only when",
+    "rows": [
+      {"data": "Your own floats and settings", "stays": "Yes", "leaves": "You switch on Google Drive sync (a copy in your own Drive app data folder) or Wear OS sync (to your own watch)."},
+      {"data": "Google Calendar events", "stays": "Yes, only local", "leaves": "Never sent by Floatify to us or to third parties. They go to your paired watch only if you use Wear OS sync."},
+      {"data": "Notifications of other apps (chat messages, photos, contact names)", "stays": "Yes, only local", "leaves": "Never. When you reply, the reply goes through the original app."},
+      {"data": "Files and text you share to Floatify", "stays": "Yes, only local", "leaves": "Never."},
+      {"data": "Contacts", "stays": "Not stored", "leaves": "Never. Only looked up on the device for the optional call buttons."},
+      {"data": "Advertising data (Simple mode)", "stays": "No", "leaves": "Google AdMob collects it to show ads, according to your consent where required."},
+      {"data": "Purchase of Advanced", "stays": "Local flag only", "leaves": "Handled by Google Play."}
+    ],
+    "site": "This website uses no cookies, no analytics, no trackers and no external fonts. Your choice to hide Floaty is saved only in your own browser.",
+    "privacyLink": "Privacy Policy",
+    "termsLink": "Terms of Use"
+  },
+  "faq": {
+    "title": "Questions and answers",
+    "lead": "The same guides as in the app's FAQ.",
+    "items": [
+      {"id": "notif", "q": "How do I get floats from app notifications?", "style": "ol", "a": [
+        "Open Settings with the gear icon at the top right of the home screen, then open Notification settings.",
+        "If you see Notification access required, tap Enable and switch on Floatify Notification in the list that opens. Floatify Notification only reads notifications to make floats.",
+        "Choose your apps in the app list. In Advanced you pick per app: floats on (green), floats off (red) or visible while the app is open (purple). In Simple you switch an app on or off.",
+        "Send yourself a message in a chosen app. A float appears; tap it to read the message or reply."
+      ]},
+      {"id": "silence", "q": "How do I silence the original notifications?", "style": "ol", "a": [
+        "A float already shows the message. Silencing the original notification stops the double sound and pop-up, while Floatify Notification still receives it. Never block an app completely: Android then sends nothing to Floatify Notification and no float appears.",
+        "Android does not let one app change another app's settings, so Floatify Notification guides you through it, one app at a time.",
+        "Open Settings → Notification settings and tap Silence selected apps. Tap the button for the first app: Android opens that app's notification settings. Set it (or its channels) to Silent and press back.",
+        "Floatify Notification marks the app as done. Tap the button for the next app until all are done. Use Start over to run it again."
+      ]},
+      {"id": "sync", "q": "How do floats and notifications stay in sync?", "style": "ul", "a": [
+        "Open Settings → Notification settings.",
+        "Dismiss notification on close: closing a float also removes its notification from the Android notification panel.",
+        "Remove float when notification disappears: the other way around. Swiping a notification away already removes its float. With this switch on, the float also goes when the app clears its own notification, for example after you read the chat in the app.",
+        "Mark as read when opened or closed: also marks a chat message as read in its own app, so the sender sees it was read."
+      ]},
+      {"id": "reply", "q": "How do I reply from a float?", "style": "ol", "a": [
+        "Make sure the chat app is switched on in Settings → Notification settings.",
+        "When a message arrives, tap its float. A card opens with the message and a reply field.",
+        "Type your answer and tap Send. The notification is cleared as well."
+      ]},
+      {"id": "calendar", "q": "How do I sync my Google Calendar?", "style": "ol", "a": [
+        "Calendar sync belongs to Advanced mode. Switch to Advanced in Settings first (you can try it free for 3 days).",
+        "Open Settings → Calendar & Sync and sign in with your Google account.",
+        "Choose which calendars to use. Events from those calendars become floats."
+      ]},
+      {"id": "backup", "q": "How do I back up and restore my floats?", "style": "ol", "a": [
+        "Open Settings → Backup & restore.",
+        "Tap Choose folder, pick a folder, then tap Back up now. Turn on Automatic backup to do this on a schedule.",
+        "On a new phone: install Floatify Notification, open the same section, choose the folder and tap Restore from backup."
+      ]},
+      {"id": "look", "q": "How do I change how floats look?", "style": "ul", "a": [
+        "Open Settings → Float appearance.",
+        "In Advanced you can start from a theme (Slider, Buttons, Minimal or Maximal). Dock mode, Design your sidebar and Shape are right there."
+      ]},
+      {"id": "sound", "q": "How do I set sound, vibration and quiet hours?", "style": "ul", "a": [
+        "Open Settings → Sound & Vibration to switch the sound and vibration on or off.",
+        "Switch on Quiet mode in the same section (Advanced) and set a start and end time. Floats and notifications stay silent in that period."
+      ]},
+      {"id": "mode", "q": "What is the difference between Simple and Advanced?", "style": "ul", "a": [
+        "At the top of Settings you switch between Simple and Advanced.",
+        "Simple: only app notifications become floats, with one switch per app. No account needed.",
+        "Advanced: everything, including your own floats, Google Calendar, sharing, shapes and themes. You can try it free for 3 days."
+      ]},
+      {"id": "panel", "q": "How do I hide Floatify Notification's notification in the Android panel?", "style": "p", "a": [
+        "Floatify Notification posts no notification of its own for your floats. To keep floats on screen, Android requires an app to show one small silent entry while floats are active. Floatify Notification keeps it at the lowest priority and hidden on the lock screen, and removes it as soon as no float is active.",
+        "You can hide it completely: open the notification settings of Floatify Notification, open the category Floatify Notification overlay and switch it off. The floats keep working.",
+        "The message Floatify Notification is displayed over other apps comes from Android itself and an app cannot remove it. If you do not want Floatify Notification to use this function, tap that message to open the settings and switch it off. Floats cannot appear then."
+      ]}
+    ]
+  },
+  "closing": {
+    "title": "Ready to float?",
+    "lead": "Install Floatify Notification, tell Floaty how you like your notifications, and let the messages float.",
+    "setup": "Floaty guides you through the setup in the app, too. Tell him how you like your notifications (Chaos, Mild chaos or In control) and he picks a matching theme. Prefer to do it all yourself? Choose \"I want to set it myself\".",
+    "feedback": "Floatify is made by one developer in the Netherlands. Have an idea, or spotted something that could be better? You're welcome to get in touch. Your feedback helps the app grow.",
+    "mailLabel": "Write an email",
+    "tagline": "A little reminder, at your pace."
+  },
+  "footer": {
+    "disclaimer": "Not intended for medical or critical reminders. Notifications are not guaranteed to be delivered or shown on time.",
+    "trademark": "Google Play and the Google Play logo are trademarks of Google LLC. Other names are trademarks of their owners.",
+    "contact": "Contact"
+  },
+  "floaty": {
+    "hero": "Hi, I'm Floaty! Let me show you around.",
+    "film": "Press play and see it in action.",
+    "what": "Messages come in and disappear. Floatify keeps them floating until you're done.",
+    "features": "Here's what I can do. Let me show you.",
+    "more": "And there is a bit more.",
+    "modes": "Simple is easy. Advanced is full control.",
+    "permissions": "Android asks for a few permissions. I'll help with each one.",
+    "privacy": "Your messages stay on your phone.",
+    "faq": "Questions? Open one and I'll wait.",
+    "closing": "That's it! I'll be right here when you need me.",
+    "gagParachute": "Whee!",
+    "gagBungee": "Boing!"
+  },
+  "jsonld": {
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "ANDROID",
+    "offerDescription": "Free to install. Advanced mode is a one-time in-app purchase."
+  }
+}

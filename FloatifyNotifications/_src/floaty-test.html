@@ -1,0 +1,63 @@
+<!doctype html>
+<!-- Test page for the Floaty port. Lives under _src/, so Jekyll never publishes it.
+     Open it through a static server started in the repo root: /FloatifyNotifications/_src/floaty-test.html
+     It draws the same cells as promo-video/src/PoseSheet.tsx (scale 0.8, film frame 90, idle 0)
+     so the result can be compared with promo-video/out/pose-sheet.png. Add ?live to see it move. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Floaty pose test</title>
+<meta name="viewport" content="width=1920">
+<style>
+  @font-face { font-family: Fredoka; font-weight: 300 700; src: url(../assets/fonts/Fredoka-latin.woff2) format('woff2'); }
+  html, body { margin: 0; }
+  body { width: 1920px; height: 1080px; position: relative; overflow: hidden; font-family: Fredoka, sans-serif;
+    background: linear-gradient(#F2FAFD, #CDE6F5); }
+  .cell { position: absolute; width: 700px; height: 700px; margin: -350px 0 0 -350px; }
+  .lab { position: absolute; width: 400px; margin-left: -200px; text-align: center; font-weight: 600; font-size: 30px; color: #16345F; }
+</style>
+</head>
+<body>
+<script src="../assets/js/floaty.js"></script>
+<script>
+(function () {
+  var F = Floaty, H = F.HAND, M = F.mirrorHand, P = F.pointHand;
+  var live = /[?&]live/.test(location.search);
+  var cells = [
+    ['rust', {}],
+    ['zwaaien', {R: Object.assign({}, H.open, {dx: 150, dy: -70, rot: 12, wave: 0}), mouth: 0.5}, true],
+    ['welkom', {R: H.open, L: M(H.open), mouth: 0.6, brow: 0.5}],
+    ['duim omhoog', {R: H.thumbsUp, happy: 1, mouth: 0.7}],
+    ['wijst rechts', {R: P(0, 0, 1, 250, -30), lookX: 1, mouth: 0.1}],
+    ['wijst links', {L: M(P(0, 0, 1, 250, -30)), lookX: -1}],
+    ['wijst rechtsonder', {R: P(0, 0, 1, 190, 175), lookX: 0.8, lookY: 0.8, mouth: 0.1}],
+    ['wijst linksonder', {L: M(P(0, 0, 1, 190, 175)), lookX: -0.8, lookY: 0.8, mouth: 0.1}],
+    ['wijst rechtsboven', {R: P(0, 0, 1, 190, -175), lookX: 0.8, lookY: -0.8, mouth: 0.1}],
+    ['wijst linksboven', {L: M(P(0, 0, 1, 190, -175)), lookX: -0.8, lookY: -0.8, mouth: 0.1}],
+    ['verbaasd', {brow: 1, wide: 1, gasp: 1, sy: 1.06, sx: 0.97,
+      R: Object.assign({}, H.open, {dx: 118, dy: 52, rot: 6, thumb: 0.6, thumbAng: 30}),
+      L: M(Object.assign({}, H.open, {dx: 118, dy: 52, rot: 6, thumb: 0.6, thumbAng: 30}))}]
+    // 'op stoel' (the chair) is not part of the web version
+  ];
+  cells.forEach(function (c, i) {
+    var col = i % 4, row = Math.floor(i / 4);
+    var cx = 240 + col * 480, cy = 190 + row * 345;
+    var host = document.createElement('div');
+    host.className = 'cell';
+    host.style.left = cx + 'px';
+    host.style.top = cy + 'px';
+    document.body.appendChild(host);
+    var f = F.create(host, {pose: Object.assign({}, c[1], {scale: 0.8, idle: live ? 1 : 0}), frame: live ? undefined : 90});
+    f.setSpeaking(!!c[2]);
+    if (live) f.start();
+    var l = document.createElement('div');
+    l.className = 'lab';
+    l.style.left = cx + 'px';
+    l.style.top = (cy + 140) + 'px';
+    l.textContent = c[0];
+    document.body.appendChild(l);
+  });
+})();
+</script>
+</body>
+</html>

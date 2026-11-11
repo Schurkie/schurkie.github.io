@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floatify Notification – messages that float until you&#39;re done</title>
+<meta name="description" content="Floatify Notification turns chat messages into small floating bubbles over your other apps. Read, reply, snooze, dock. Free to start on Android.">
+<link rel="canonical" href="https://schurkie.github.io/FloatifyNotifications/">
+<meta name="theme-color" content="#0AB0B0">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Floatify Notification">
+<meta property="og:title" content="Floatify Notification – messages that float until you&#39;re done">
+<meta property="og:description" content="Floatify Notification turns chat messages into small floating bubbles over your other apps. Read, reply, snooze, dock. Free to start on Android.">
+<meta property="og:url" content="https://schurkie.github.io/FloatifyNotifications/">
+<meta property="og:image" content="https://schurkie.github.io/FloatifyNotifications/assets/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Floaty, the Floatify mascot, next to the text Floatify Notification: messages that float until you&#39;re done.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Floatify Notification – messages that float until you&#39;re done">
+<meta name="twitter:description" content="Floatify Notification turns chat messages into small floating bubbles over your other apps. Read, reply, snooze, dock. Free to start on Android.">
+<meta name="twitter:image" content="https://schurkie.github.io/FloatifyNotifications/assets/img/og-image.png">
+<link rel="preload" href="assets/fonts/Fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.className += ' js';</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Floatify Notification",
+  "description": "Floatify Notification turns chat messages into small floating bubbles over your other apps. Read, reply, snooze, dock. Free to start on Android.",
+  "url": "https://schurkie.github.io/FloatifyNotifications/",
+  "image": "https://schurkie.github.io/FloatifyNotifications/assets/img/og-image.png",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "ANDROID",
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.bubblefication.bubblefication",
+  "inLanguage": "en",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR",
+    "description": "Free to install. Advanced mode is a one-time in-app purchase."
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="#top" aria-label="Floatify Notification, back to the top">
+      <img src="assets/img/logo-192.png" width="40" height="40" alt="">
+      <span>Floatify Notification</span>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#film">Film</a><a href="#features">Features</a><a href="#modes">Simple or Advanced</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top" data-guide="hero" data-say="Hi, I&#39;m Floaty! Let me show you around." data-pose="wave" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div class="hero-stage" id="hero-stage" data-gag-say="Whee!">
+        <p class="bubble hero-bubble" id="hero-bubble">Hi, I&#39;m Floaty! Let me show you around.</p>
+        <div class="hero-floaty">
+          <img class="hero-fallback" src="assets/img/floaty-hero.svg" width="420" height="420" alt="Floaty, a friendly round bubble with a face and little hands, waving.">
+          <div class="floaty-host" id="hero-host" aria-hidden="true"></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="eyebrow">For Android</p>
+        <h1 id="hero-title">Floatify Notification</h1>
+        <p class="lead">Messages that float until you&#39;re done with them.</p>
+        <p class="sub">Floatify turns the chat messages you choose into small floating bubbles over your other apps. Read, reply and snooze right from the bubble.</p>
+        <div class="cta">
+          <a class="play" data-avoid href="https://play.google.com/store/apps/details?id=com.bubblefication.bubblefication"><img src="assets/badges/google-play-en.png" width="646" height="250" alt="Get it on Google Play"></a>
+          <div class="cta-buttons">
+            <a class="btn btn-primary" data-avoid href="#film">Watch the film</a>
+            <button class="btn btn-ghost js-only" data-avoid type="button" id="tour-start">Take the tour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="film" data-guide="film" data-say="Press play and see it in action." data-pose="welcome" aria-labelledby="film-title">
+    <div class="wrap">
+      <h2 id="film-title">See it in action</h2>
+      <p class="section-lead">The film shows what a float is, how you answer from it and how you make it yours.</p>
+      <div class="video-frame" data-avoid>
+        <video controls playsinline preload="none" width="1280" height="720" poster="media/floatify-promo-long-poster.webp" aria-label="Floatify Notification, the film">
+          <source src="media/floatify-promo-long.mp4" type="video/mp4">
+          <p>Your browser cannot play this video. You can <a href="media/floatify-promo-long.mp4">download the film (MP4)</a>.</p>
+        </video>
+      </div>
+      <details class="scenes">
+        <summary>What happens in the film</summary>
+        <ol>
+          <li>Chat messages come in and disappear.</li>
+          <li>Floatify turns every message into a float.</li>
+          <li>Open it, read it, reply on the spot.</li>
+          <li>One tap opens the chat, or blocks a contact or group.</li>
+          <li>Photos come along: tap one, swipe through them all.</li>
+          <li>Hold the thumb for a quick reaction.</li>
+          <li>Snoozed floats wait in a widget on your home screen.</li>
+          <li>Not now? Snooze it, or dock it at the edge.</li>
+          <li>Reminders, ideas, to-dos: make your own floats.</li>
+          <li>Make it yours. Pick a shape and a motion.</li>
+          <li>No time? Start from a ready-made theme.</li>
+          <li>Bigger? Faster? Just tap.</li>
+          <li>Park floats at the edge, or in a sidebar.</li>
+          <li>Your Google Calendar can send floats too.</li>
+          <li>A daily backup keeps your floats safe.</li>
+          <li>Simple is easy. Advanced is full control.</li>
+          
+        </ol>
+      </details>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="what" data-guide="what" data-say="Messages come in and disappear. Floatify keeps them floating until you&#39;re done." data-pose="wow" aria-labelledby="what-title">
+    <div class="wrap what-grid">
+      <div class="what-text">
+        <h2 id="what-title">What is Floatify?</h2>
+        <p>You read a message, think &quot;I&#39;ll get back to that&quot;, and carry on with your day. Sound familiar? Floatify helps you remember to come back to it.</p>
+        <p>Floatify turns selected notifications into small floating bubbles, called floats. They appear over other apps, so you don&#39;t have to keep opening your notification shade. You choose what deserves your attention and when to come back to it.</p>
+        <p>Tap a float to read the message. Long message? The content scrolls inside a coloured frame that stays in place. Links in chat messages are tappable on the card.</p>
+      </div>
+      <figure class="shot">
+        <img src="assets/img/shot-01-float-on-top.webp" width="720" height="1600" alt="A phone screen with small round floats with emoji floating on top of it, under the caption Reminders that float on top." loading="lazy" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="features" aria-labelledby="features-title">
+    <div class="wrap">
+      <div data-guide="features" data-say="Here&#39;s what I can do. Let me show you." data-pose="happy">
+        <h2 id="features-title">What Floatify does</h2>
+        <p class="section-lead">Each feature in three short lines: what it is, why it helps and an example.</p>
+      </div>
+      
+      <article class="feature" id="f-floats" data-guide="feature-floats" data-say="Every message becomes a bubble, just like me. It floats until you&#39;re done." data-pose="happy">
+        <div class="feature-text">
+          <h3>Messages become floats
+            
+            
+          </h3>
+          <dl class="www">
+            <div><dt>What</dt><dd>The chat messages from the apps you choose appear as small floating bubbles on top of everything else.</dd></div>
+            <div><dt>Why</dt><dd>You see them without opening the notification shade, and they stay until you decide what to do.</dd></div>
+            <div><dt>Example</dt><dd>A friend asks &quot;Are you coming tonight?&quot; while you are in the middle of a map. The float waits over the map until you have a moment.</dd></div>
+          </dl>
+        </div>
+        
+        <div class="feature-shots">
+          <figure class="shot"><img src="assets/img/shot-02-messages-become-floats.webp" width="720" height="1600" alt="A phone screen with several floats, among them a chat bubble and a rocket, under the caption Messages become floats." loading="lazy" decoding="async"></figure>
+          
+        </div>
+        
+      </article>
+      
+      <article class="feature" id="f-reply" data-guide="feature-reply" data-say="Tap, type, send. You never have to leave your app." data-pose="wave">
+        <div class="feature-text">
+          <h3>Reply right from the float
+            
+            
+          </h3>
+          <dl class="www">
+            <div><dt>What</dt><dd>Tap a float and a card opens with the message and a reply field. It works when the original notification supports quick replies.</dd></div>
+            <div><dt>Why</dt><dd>No jumping between apps. When you send your answer, the notification is cleared too.</dd></div>
+            <div><dt>Example</dt><dd>Type &quot;Yes, see you at eight!&quot; and tap Send, still inside the app you were using.</dd></div>
+          </dl>
+        </div>
+        
+        <div class="feature-shots">
+          <figure class="shot"><img src="assets/img/shot-03-reply-from-float.webp" width="720" height="1600" alt="An opened float card with a message from Sam, a reply field with a Send button and a grid of snooze times, under the caption Reply right from the float." loading="lazy" decoding="async"></figure>
+          
+        </div>
+        
+      </article>
+      
+      <article class="feature" id="f-chat" data-guide="feature-chat" data-say="One tap opens the chat. A group that never stops? Block its floats." data-pose="welcome">
+        <div class="feature-text">
+          <h3>One tap to the chat
+            
+            <span class="tag tag-part" title="Part of Advanced mode">Call and block: Advanced</span>
+          </h3>
+          <dl class="www">
+            <div><dt>What</dt><dd>A row of icons on the card opens the chat in its own app. Advanced adds optional call and video call buttons, and lets you allow or block floats per chat or group.</dd></div>
+            <div><dt>Why</dt><dd>Jump to the whole conversation when a float is not enough, and keep the noisy chats from floating at all.</dd></div>
+            <div><dt>Example</dt><dd>A busy group chat keeps pinging. Block the floats of that group and keep the rest.</dd></div>
+          </dl>
+        </div>
+        
+        <div class="feature-shots">
+          <figure class="shot"><img src="assets/img/card-open-chat.webp" width="720" height="680" alt="An opened float card for the contact Anna with a row of round icon buttons for opening the chat, adding to a calendar, sharing, editing and blocking, and buttons to snooze and dismiss." loading="lazy" decoding="async"></figure>
+          
+        </div>
+        
+      </article>
+      
+      <article class="feature" id="f-photos" data-guide="feature-photos" data-say="Photos come along! Swipe through them, and hold the thumb to react." data-pose="wow">
+        <div class="feature-text">
+          <h3>Photos and quick reactions
+            
+            
+          </h3>
+          <dl class="www">
+            <div><dt>What</dt><dd>Photos in a message come along on the card: tap one to open it, then swipe through all of them. Hold the thumb to send a quick reaction.</dd></div>
+            <div><dt>Why</dt><dd>You see the picture and answer it without opening the chat app.</dd></div>
+            <div><dt>Example</dt><dd>Someone sends holiday photos. Swipe through them, hold the thumb and pick a heart.</dd></div>
+          </dl>
+        </div>
+        
+      </article>
+      
+      <article class="feature" id="f-snooze" data-guide="feature-snooze" data-say="Not now? Snooze it. It floats back when you&#39;re ready." data-pose="happy">
+        <div class="feature-text">
+          <h3>Snooze for later
+            
+            
+          </h3>
+          <dl class="www">
+            <div><dt>What</dt><dd>Not now? Snooze a float for a short break, a custom duration, or a date and time you choose. The Snoozed Floats list shows what is coming back and when.</dd></div>
+            <div><dt>Why</dt><dd>The float gets out of your way and returns when you can deal with it.</dd></div>
+            <div><dt>Example</dt><dd>Snooze a work message until Monday morning and enjoy your weekend.</dd></div>
+          </dl>
+        </div>
+        
+        <div class="feature-shots">
+          <figure class="shot"><img src="assets/img/shot-05-snooze.webp" width="720" height="1600" alt="The opened float card of a chat with a grid of snooze times from one minute to one week, under the caption Snooze for a minute or a week." loading="lazy" decoding="async"></figure>
+          
+        </div>
+        
+      </article>
+      
+      <article class="feature" id="f-dock" data-guide="feature-dock" data-say="Park floats at the edge, out of your way." data-pose="welcome">
+        <div class="feature-text">
+          <h3>Dock at the edge
+            <span class="tag" title="Part of Advanced mode">Advanced</span>
+            
+          </h3>
+          <dl class="www">
+            <div><dt>What</dt><dd>Park floats at the edge of the screen or in a sidebar, and keep snoozed floats there with a countdown.</dd></div>
+            <div><dt>Why</dt><dd>The middle of your screen stays free and nothing gets lost.</dd></div>
+            <div><dt>Example</dt><dd>Snooze a reminder for twenty minutes and let it wait at the edge, counting down.</dd></div>
+          </dl>
+        </div>
+        
+        <div class="feature-shots">
+          <figure class="shot"><img src="assets/img/shot-04-dock-on-edge.webp" width="720" height="1600" alt="A phone screen with a column of small docked floats along the left edge and one more float on the right edge, under the caption Dock it on the edge." loading="lazy" decoding="async"></figure>
+          
+        </div>
+        
+      </article>
+      
+      <article class="feature" id="f-own" data-guide="feature-own" data-say="Make floats for your own reminders, too. I&#39;ll keep them in sight." data-pose="thumbsUp">
+        <div class="feature-text">
+          <h3>Your own floats, calendar and widget
+            <span class="tag" title="Part of Advanced mode">Advanced</span>
+            
+          </h3>
+          <dl class="www">
+            <div><dt>What</dt><dd>Make floats for reminders, ideas and to-dos, or share text to Floatify. Import your Google Calendar events if you like, with a shape per calendar. Snoozed floats can wait in a widget on your home screen.</dd></div>
+            <div><dt>Why</dt><dd>Everything you must not forget lives in one place, as floats you can see.</dd></div>
+            <div><dt>Example</dt><dd>Share a link from your browser to Floatify and it floats back to you this evening.</dd></div>
+          </dl>
+        </div>
+        
+        <div class="feature-shots">
+          <figure class="shot"><img src="assets/img/shot-06-widget.webp" width="720" height="1600" alt="A phone home screen with a Floatify widget listing three snoozed floats, under the caption Snoozed floats at a glance." loading="lazy" decoding="async"></figure>
+          
+        </div>
+        
+      </article>
+      
+      <article class="feature" id="f-look" data-guide="feature-look" data-say="Pick a shape and a motion. Make it yours!" data-pose="happy">
+        <div class="feature-text">
+          <h3>Make it yours
+            <span class="tag" title="Part of Advanced mode">Advanced</span>
+            
+          </h3>
+          <dl class="www">
+            <div><dt>What</dt><dd>Pick a shape (even per app), an emoji or the app icon, an animation, a size, a speed and a transparency. Or start from a ready-made theme: Slider, Buttons, Minimal or Maximal.</dd></div>
+            <div><dt>Why</dt><dd>Let the important chats stand out and let the rest stay calm.</dd></div>
+            <div><dt>Example</dt><dd>A heart for your partner and the app icon for everyone else.</dd></div>
+          </dl>
+        </div>
+        
+        <div class="feature-shots">
+          <figure class="shot"><img src="assets/img/shot-07-any-emoji.webp" width="720" height="1600" alt="The emoji picker of Floatify with a large grid of animals and faces, under the caption Any emoji as your float." loading="lazy" decoding="async"></figure>
+          <figure class="shot"><img src="assets/img/shot-08-make-it-yours.webp" width="720" height="1600" alt="The Float appearance settings with colour choices, default shape, animation and transparency, under the caption Make it yours." loading="lazy" decoding="async"></figure>
+        </div>
+        
+      </article>
+      
+      <div class="more" data-guide="more" data-say="And there is a bit more." data-pose="welcome">
+        <h3>And more</h3>
+        <ul class="chips">
+          <li>Quiet hours <span class="tag" title="Part of Advanced mode">Advanced</span></li>
+          <li>Statistics <span class="tag" title="Part of Advanced mode">Advanced</span></li>
+          <li>Grouping with a counter <span class="tag" title="Part of Advanced mode">Advanced</span></li>
+          <li>Share files to Floatify <span class="tag" title="Part of Advanced mode">Advanced</span></li>
+          <li>Wear OS support <span class="tag" title="Part of Advanced mode">Advanced</span></li>
+          <li>Sync between your devices through Google Drive <span class="tag" title="Part of Advanced mode">Advanced</span></li>
+          <li>Daily backup to a folder you choose</li>
+          <li>Sound and vibration settings</li>
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="modes" data-guide="modes" data-say="Simple is easy. Advanced is full control." data-pose="welcome" data-gag-say="Boing!" aria-labelledby="modes-title">
+    <div class="wrap">
+      <h2 id="modes-title">Simple or Advanced: you choose</h2>
+      <p class="section-lead">Floatify has two modes. Start right away with Simple, and switch to Advanced when you want the full toolbox. Both modes remember their own settings, so you can switch whenever you like.</p>
+      <div class="cards">
+        <article class="card card-simple">
+          <p class="card-badge">Free</p>
+          <h3>Simple</h3>
+          <p class="card-tag">Free and ready in a minute</p>
+          <ul>
+            <li>One switch per app decides which notifications become floats.</li>
+            <li>Read, reply, snooze or dismiss straight from the float.</li>
+            <li>A calm, consistent look that works from the first minute.</li>
+            <li>Sound and vibration settings.</li>
+            <li>A short guided setup with Floaty, and a 3-day Advanced trial if you&#39;re curious.</li>
+            <li>No account needed.</li>
+            
+          </ul>
+          <p class="card-note">Simple is supported by a small ad banner at the bottom of the app.</p>
+        </article>
+        <article class="card card-advanced">
+          <p class="card-badge card-badge-adv">Advanced</p>
+          <h3>Advanced</h3>
+          <p class="card-tag">The full Floatify</p>
+          <p class="card-price">A one-time in-app purchase: no subscription and no ads. Try it free for 3 days.</p>
+          <ul>
+            <li>Your own reminders, and floats made from shared text.</li>
+            <li>Google Calendar import and synchronization, with a shape per calendar.</li>
+            <li>Float synchronization between your devices through Google Drive.</li>
+            <li>Grouping by app or calendar, with a counter and message browsing.</li>
+            <li>Shape (even per app), emoji or app icon, animation, size, speed and transparency.</li>
+            <li>Dock floats at the screen edge or in the sidebar.</li>
+            <li>Quiet hours for the moments you want peace.</li>
+            <li>Home-screen widgets in light or dark style.</li>
+            <li>Allow or block floats per chat or group.</li>
+            <li>Optional call and video call buttons for WhatsApp and other chat apps.</li>
+            <li>Share files to Floatify and they come along as attachments.</li>
+            <li>Statistics and support for your Wear OS watch.</li>
+            
+          </ul>
+        </article>
+      </div>
+      <p class="footnote">You can restore a previous purchase. If you already used Floatify before this purchase option was introduced, you keep access to Advanced. Google synchronization requires linking your Google account.</p>
+    </div>
+  </section>
+
+  <section class="section" id="permissions" data-guide="permissions" data-say="Android asks for a few permissions. I&#39;ll help with each one." data-pose="rest" aria-labelledby="perm-title">
+    <div class="wrap">
+      <h2 id="perm-title">Permissions, one step at a time</h2>
+      <p class="section-lead">Floatify guides you through the setup. Google connections are optional.</p>
+      <ul class="perms">
+        <li><strong>Display over other apps</strong> lets floats appear above other apps.</li>
+        <li><strong>Notification access</strong> turns notifications from your chosen apps into floats.</li>
+        <li><strong>Usage access</strong> helps hide floats in apps you&#39;ve excluded.</li>
+        <li><strong>Contacts access</strong> is optional and only used for the call buttons.</li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="privacy" data-guide="privacy" data-say="Your messages stay on your phone." data-pose="happy" aria-labelledby="privacy-title">
+    <div class="wrap">
+      <h2 id="privacy-title">Privacy in short</h2>
+      <p class="section-lead">What goes where, in one table. The full text is in the privacy policy.</p>
+      <dl class="prows" aria-label="Where your data goes">
+        
+        <div class="prow">
+          <dt>Your own floats and settings</dt>
+          <dd><span class="prow-label">Stays on your device?</span> <strong>Yes</strong></dd>
+          <dd><span class="prow-label">Leaves your device only when</span> You switch on Google Drive sync (a copy in your own Drive app data folder) or Wear OS sync (to your own watch).</dd>
+        </div>
+        
+        <div class="prow">
+          <dt>Google Calendar events</dt>
+          <dd><span class="prow-label">Stays on your device?</span> <strong>Yes, only local</strong></dd>
+          <dd><span class="prow-label">Leaves your device only when</span> Never sent by Floatify to us or to third parties. They go to your paired watch only if you use Wear OS sync.</dd>
+        </div>
+        
+        <div class="prow">
+          <dt>Notifications of other apps (chat messages, photos, contact names)</dt>
+          <dd><span class="prow-label">Stays on your device?</span> <strong>Yes, only local</strong></dd>
+          <dd><span class="prow-label">Leaves your device only when</span> Never. When you reply, the reply goes through the original app.</dd>
+        </div>
+        
+        <div class="prow">
+          <dt>Files and text you share to Floatify</dt>
+          <dd><span class="prow-label">Stays on your device?</span> <strong>Yes, only local</strong></dd>
+          <dd><span class="prow-label">Leaves your device only when</span> Never.</dd>
+        </div>
+        
+        <div class="prow">
+          <dt>Contacts</dt>
+          <dd><span class="prow-label">Stays on your device?</span> <strong>Not stored</strong></dd>
+          <dd><span class="prow-label">Leaves your device only when</span> Never. Only looked up on the device for the optional call buttons.</dd>
+        </div>
+        
+        <div class="prow">
+          <dt>Advertising data (Simple mode)</dt>
+          <dd><span class="prow-label">Stays on your device?</span> <strong>No</strong></dd>
+          <dd><span class="prow-label">Leaves your device only when</span> Google AdMob collects it to show ads, according to your consent where required.</dd>
+        </div>
+        
+        <div class="prow">
+          <dt>Purchase of Advanced</dt>
+          <dd><span class="prow-label">Stays on your device?</span> <strong>Local flag only</strong></dd>
+          <dd><span class="prow-label">Leaves your device only when</span> Handled by Google Play.</dd>
+        </div>
+        
+      </dl>
+      <p class="site-privacy">This website uses no cookies, no analytics, no trackers and no external fonts. Your choice to hide Floaty is saved only in your own browser.</p>
+      <p class="links">
+        <a class="btn btn-ghost" href="/privacy_policy.html">Privacy Policy</a>
+        <a class="btn btn-ghost" href="/terms.html">Terms of Use</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="faq" data-guide="faq" data-say="Questions? Open one and I&#39;ll wait." data-pose="wow" aria-labelledby="faq-title">
+    <div class="wrap">
+      <h2 id="faq-title">Questions and answers</h2>
+      <p class="section-lead">The same guides as in the app&#39;s FAQ.</p>
+      <div class="faq-list">
+        
+        <details class="qa" id="q-notif">
+          <summary><span>How do I get floats from app notifications?</span></summary>
+          <div class="qa-body">
+            <ol><li>Open Settings with the gear icon at the top right of the home screen, then open Notification settings.</li><li>If you see Notification access required, tap Enable and switch on Floatify Notification in the list that opens. Floatify Notification only reads notifications to make floats.</li><li>Choose your apps in the app list. In Advanced you pick per app: floats on (green), floats off (red) or visible while the app is open (purple). In Simple you switch an app on or off.</li><li>Send yourself a message in a chosen app. A float appears; tap it to read the message or reply.</li></ol>
+            
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-silence">
+          <summary><span>How do I silence the original notifications?</span></summary>
+          <div class="qa-body">
+            <ol><li>A float already shows the message. Silencing the original notification stops the double sound and pop-up, while Floatify Notification still receives it. Never block an app completely: Android then sends nothing to Floatify Notification and no float appears.</li><li>Android does not let one app change another app&#39;s settings, so Floatify Notification guides you through it, one app at a time.</li><li>Open Settings → Notification settings and tap Silence selected apps. Tap the button for the first app: Android opens that app&#39;s notification settings. Set it (or its channels) to Silent and press back.</li><li>Floatify Notification marks the app as done. Tap the button for the next app until all are done. Use Start over to run it again.</li></ol>
+            
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-sync">
+          <summary><span>How do floats and notifications stay in sync?</span></summary>
+          <div class="qa-body">
+            
+            <ul><li>Open Settings → Notification settings.</li><li>Dismiss notification on close: closing a float also removes its notification from the Android notification panel.</li><li>Remove float when notification disappears: the other way around. Swiping a notification away already removes its float. With this switch on, the float also goes when the app clears its own notification, for example after you read the chat in the app.</li><li>Mark as read when opened or closed: also marks a chat message as read in its own app, so the sender sees it was read.</li></ul>
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-reply">
+          <summary><span>How do I reply from a float?</span></summary>
+          <div class="qa-body">
+            <ol><li>Make sure the chat app is switched on in Settings → Notification settings.</li><li>When a message arrives, tap its float. A card opens with the message and a reply field.</li><li>Type your answer and tap Send. The notification is cleared as well.</li></ol>
+            
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-calendar">
+          <summary><span>How do I sync my Google Calendar?</span></summary>
+          <div class="qa-body">
+            <ol><li>Calendar sync belongs to Advanced mode. Switch to Advanced in Settings first (you can try it free for 3 days).</li><li>Open Settings → Calendar &amp; Sync and sign in with your Google account.</li><li>Choose which calendars to use. Events from those calendars become floats.</li></ol>
+            
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-backup">
+          <summary><span>How do I back up and restore my floats?</span></summary>
+          <div class="qa-body">
+            <ol><li>Open Settings → Backup &amp; restore.</li><li>Tap Choose folder, pick a folder, then tap Back up now. Turn on Automatic backup to do this on a schedule.</li><li>On a new phone: install Floatify Notification, open the same section, choose the folder and tap Restore from backup.</li></ol>
+            
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-look">
+          <summary><span>How do I change how floats look?</span></summary>
+          <div class="qa-body">
+            
+            <ul><li>Open Settings → Float appearance.</li><li>In Advanced you can start from a theme (Slider, Buttons, Minimal or Maximal). Dock mode, Design your sidebar and Shape are right there.</li></ul>
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-sound">
+          <summary><span>How do I set sound, vibration and quiet hours?</span></summary>
+          <div class="qa-body">
+            
+            <ul><li>Open Settings → Sound &amp; Vibration to switch the sound and vibration on or off.</li><li>Switch on Quiet mode in the same section (Advanced) and set a start and end time. Floats and notifications stay silent in that period.</li></ul>
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-mode">
+          <summary><span>What is the difference between Simple and Advanced?</span></summary>
+          <div class="qa-body">
+            
+            <ul><li>At the top of Settings you switch between Simple and Advanced.</li><li>Simple: only app notifications become floats, with one switch per app. No account needed.</li><li>Advanced: everything, including your own floats, Google Calendar, sharing, shapes and themes. You can try it free for 3 days.</li></ul>
+            
+          </div>
+        </details>
+        
+        <details class="qa" id="q-panel">
+          <summary><span>How do I hide Floatify Notification&#39;s notification in the Android panel?</span></summary>
+          <div class="qa-body">
+            
+            
+            <p>Floatify Notification posts no notification of its own for your floats. To keep floats on screen, Android requires an app to show one small silent entry while floats are active. Floatify Notification keeps it at the lowest priority and hidden on the lock screen, and removes it as soon as no float is active.</p><p>You can hide it completely: open the notification settings of Floatify Notification, open the category Floatify Notification overlay and switch it off. The floats keep working.</p><p>The message Floatify Notification is displayed over other apps comes from Android itself and an app cannot remove it. If you do not want Floatify Notification to use this function, tap that message to open the settings and switch it off. Floats cannot appear then.</p>
+          </div>
+        </details>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="section closing" id="closing" data-guide="closing" data-say="That&#39;s it! I&#39;ll be right here when you need me." data-pose="thumbsUp" aria-labelledby="closing-title">
+    <div class="wrap closing-box">
+      <h2 id="closing-title">Ready to float?</h2>
+      <p class="section-lead">Install Floatify Notification, tell Floaty how you like your notifications, and let the messages float.</p>
+      <p class="closing-badge"><a class="play" data-avoid href="https://play.google.com/store/apps/details?id=com.bubblefication.bubblefication"><img src="assets/badges/google-play-en.png" width="646" height="250" alt="Get it on Google Play" loading="lazy"></a></p>
+      <p>Floaty guides you through the setup in the app, too. Tell him how you like your notifications (Chaos, Mild chaos or In control) and he picks a matching theme. Prefer to do it all yourself? Choose &quot;I want to set it myself&quot;.</p>
+      <p>Floatify is made by one developer in the Netherlands. Have an idea, or spotted something that could be better? You&#39;re welcome to get in touch. Your feedback helps the app grow.</p>
+      <p><a class="btn btn-primary" data-avoid href="mailto:schurkiedev@gmail.com">Write an email</a></p>
+      <p class="tagline">A little reminder, at your pace.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="footer-links">
+      <a href="/privacy_policy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Use</a>
+      <a href="mailto:schurkiedev@gmail.com">Contact: schurkiedev@gmail.com</a>
+    </p>
+    <p>Not intended for medical or critical reminders. Notifications are not guaranteed to be delivered or shown on time.</p>
+    <p>Google Play and the Google Play logo are trademarks of Google LLC. Other names are trademarks of their owners.</p>
+  </div>
+</footer>
+
+<!-- Floaty, the guide. Everything in here is added to the page only when JavaScript runs. -->
+<div class="guide js-only" id="guide" hidden
+     data-tour="Take the tour" data-next="Next" data-top="Back to top"
+     data-hide="Hide Floaty" data-show="Show Floaty" data-floaty-label="Floaty: go to the next section">
+  <div class="bubble guide-bubble" id="guide-bubble" hidden>
+    <p aria-hidden="true"><span class="t-shown"></span><span class="t-rest"></span></p>
+  </div>
+  <div class="guide-bar" id="guide-bar">
+    <button class="gbtn" type="button" id="guide-next">Take the tour</button>
+    <button class="gx" type="button" id="guide-hide" aria-label="Hide Floaty" title="Hide Floaty"><span aria-hidden="true">&times;</span></button>
+  </div>
+  <button class="guide-body" type="button" id="guide-floaty" aria-label="Floaty: go to the next section">
+    <span class="floaty-host" id="guide-host" aria-hidden="true"></span>
+  </button>
+</div>
+<button class="show-floaty js-only" type="button" id="guide-show" hidden>Show Floaty</button>
+
+<script src="assets/js/floaty.js" defer></script>
+<script src="assets/js/gags.js" defer></script>
+<script src="assets/js/guide.js" defer></script>
+</body>
+</html>
