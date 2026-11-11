@@ -16,105 +16,155 @@
     }
     h1 { font-size: 2rem; margin-bottom: 0.25rem; color: #0057b7; }
     h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.4rem; }
+    h3 { font-size: 1.02rem; margin-top: 1.4rem; }
     p, li { font-size: 0.97rem; color: #333; }
     ul { padding-left: 1.4rem; }
     a { color: #0057b7; }
     .updated { color: #888; font-size: 0.88rem; margin-bottom: 2rem; }
     .highlight { background: #f0f6ff; border-left: 4px solid #0057b7; padding: 0.8rem 1rem; border-radius: 4px; margin: 1rem 0; }
+    .warning { background: #fff4e5; border-left: 4px solid #e67e00; padding: 0.8rem 1rem; border-radius: 4px; margin: 1rem 0; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: 0.93rem; }
+    th, td { border: 1px solid #e0e0e0; padding: 0.5rem 0.7rem; text-align: left; vertical-align: top; }
+    th { background: #f6f8fb; }
   </style>
 </head>
 <body>
 
 <h1>Floatify – Privacy Policy</h1>
-<p class="updated">Last updated: October 22, 2026</p>
+<p class="updated">Last updated: November 9, 2026</p>
 
 <div class="highlight">
-  <strong>In short:</strong> Floatify stores your reminders and settings locally on your device. We do not run a server of our own, we do not sell your data, and we do not collect personal information beyond what is strictly necessary to deliver the features you choose to use. Google services (Google Calendar, Google Drive, Google Play, AdMob, Firebase) are only involved when you use the feature that needs them.
+  <strong>In short</strong>
+  <ul>
+    <li>Your reminders and settings are stored <strong>on your device</strong>. We do not run a server that receives them, and we do not sell your data.</li>
+    <li><strong>Calendar data is processed only on your device.</strong> Events are fetched from Google Calendar straight to your phone and stay there. They are never sent to us or to any other third party (see section 3).</li>
+    <li>Everything that involves Google (Calendar, Drive, Play, AdMob, Firebase) only happens when you use the feature that needs it.</li>
+    <li>You can switch every optional feature off, and remove all data by clearing the app’s data or uninstalling it.</li>
+  </ul>
 </div>
 
 <h2>1. Who We Are</h2>
-<p>Floatify is developed by Mark Bruining. If you have any questions about this policy, you can reach us at: <a href="mailto:schurkiedev@gmail.com">schurkiedev@gmail.com</a></p>
+<p>Floatify Notification (“Floatify”) is developed by Mark Bruining. Questions about this policy: <a href="mailto:schurkiedev@gmail.com">schurkiedev@gmail.com</a>. Please also read the <a href="terms.html">Terms of Use</a>, including the notice that Floatify is not intended for medical or critical reminders.</p>
 
-<h2>2. What Data Floatify Uses</h2>
+<h2>2. At a Glance: What Goes Where</h2>
+<table>
+  <tr><th>Data</th><th>Stays on your device?</th><th>Leaves your device only when…</th></tr>
+  <tr><td>Your own floats and settings</td><td>Yes</td><td>You switch on Google Drive sync (copy in your own Drive App Data folder) or Wear OS sync (to your own watch).</td></tr>
+  <tr><td><strong>Google Calendar events</strong></td><td><strong>Yes, only local</strong></td><td><strong>Never sent by Floatify to us or to third parties.</strong> They are only sent to your paired watch if you use Wear OS sync. See section 3.</td></tr>
+  <tr><td>Notifications of other apps (chat messages, photos, contact names)</td><td>Yes, only local</td><td>Never. When you reply, the reply goes through the original app.</td></tr>
+  <tr><td>Files and text you share to Floatify</td><td>Yes, only local</td><td>Never.</td></tr>
+  <tr><td>Contacts</td><td>Not stored</td><td>Never. Only looked up on the device for the optional call buttons.</td></tr>
+  <tr><td>Advertising data (Simple mode)</td><td>No</td><td>Google AdMob collects it to show ads, according to your consent where required.</td></tr>
+  <tr><td>Purchase of Advanced</td><td>Local flag only</td><td>Handled by Google Play.</td></tr>
+</table>
 
-<h3>2a. Reminder data (stored locally on your device)</h3>
-<p>Reminders ("floats") you create — including title, message, date, time, color, and settings — are stored in the local storage of your device (Android SharedPreferences). This data leaves your device only if you enable Google Calendar sync or Google Drive sync (see sections 2c and 2d).</p>
-
-<h3>2b. App settings (stored locally on your device)</h3>
-<p>Your preferences such as bubble speed, quiet hours, vibration settings, shapes, per-app notification settings and the mode you chose (Simple or Advanced) are stored locally. They are not sent to a server of ours. If you enable Google Drive sync, your settings are included in the synced data (see 2d).</p>
-
-<h3>2c. Google Calendar (optional)</h3>
-<p>If you choose to connect your Google account, Floatify uses:</p>
+<h2>3. Calendar Data</h2>
+<div class="highlight">
+  <strong>Calendar data is processed only locally on your device.</strong> Floatify does not have a server that receives your calendar events, and the developer cannot see them.
+</div>
+<p>If you connect your Google account, Floatify uses <strong>Google Sign-In</strong> to authenticate you and the <strong>Google Calendar API</strong> with read-only access to your calendar list and events. This is how it works:</p>
 <ul>
-  <li><strong>Google Sign-In</strong> — to authenticate you.</li>
-  <li><strong>Google Calendar API</strong> — to import your calendar events as floats (read access). If you turn on the option to push floats to your calendar, Floatify also creates and updates calendar events for those floats in your Google Calendar (write access to events).</li>
+  <li><strong>Direct from Google to your phone.</strong> Events (title, description, start and end time, calendar name and colour) are downloaded over an encrypted connection straight from Google to the app on your device. There is no Floatify server in between.</li>
+  <li><strong>Stored only on your device.</strong> Imported events are turned into floats and kept in the app’s private storage. They are used only to show your floats, widgets and, if you enabled Wear OS sync, to show them on your watch.</li>
+  <li><strong>Not shared.</strong> We do not upload, sell, share or use calendar data for advertising or analytics. Calendar floats are not included in Google Drive sync, in Floatify’s backup file, or in Android’s automatic cloud backup.</li>
+  <li><strong>You choose which calendars</strong> are imported and can disconnect at any time (see section 8).</li>
 </ul>
-<p>Imported events are stored locally on your device. Floatify does not share your calendar data with anyone. You can revoke access at any time (see section 6). Google's own privacy policy applies: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+<p>Two actions that <em>you</em> start do send a float’s details elsewhere, and only to your own calendar:</p>
+<ul>
+  <li><strong>Add to Google Calendar</strong> (optional) creates an event with the float’s title, message and time in your Google Calendar. This needs extra write permission, which Floatify only asks for when you use it.</li>
+  <li><strong>Add to calendar app</strong> hands the float’s title, description and time to your calendar app through Android’s standard screen, where you decide whether to save it. Floatify uses the Android Calendar permission (READ_CALENDAR) only to check whether the event was saved.</li>
+</ul>
+<p>Google handles calendar data on its own servers under its own policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>. Floatify’s use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 
-<h3>2d. Google Drive sync (optional, Advanced)</h3>
-<p>If you enable Drive sync, Floatify stores a copy of your floats and settings in the hidden <em>App Data folder</em> of your own Google Drive, so they can be shared between your devices. Only Floatify, signed in with your account, can read this folder. It does not appear in your normal Drive files and we, as the developer, have no access to it. Floatify requests only the Drive "app data" permission, not access to your other Drive files.</p>
+<h2>4. What Data Floatify Uses</h2>
 
-<h3>2e. Notifications from other apps (optional, Advanced)</h3>
-<p>If you grant Notification access, Floatify can turn notifications of the apps <em>you select</em> into floats, for example chat messages. Floatify reads the notification content (such as sender and message text) on your device to show it in the float and to let you reply from the float. Replies are sent through the original app. This content is processed on your device only and is never sent to us or to any third party by Floatify. You can switch Notification access off at any time in Android settings.</p>
+<h3>4a. Reminders (stored locally)</h3>
+<p>Floats you create — including title, message, date, time, colour, links, images, files and settings — are stored in the local storage of your device. This data leaves your device only if you enable Google Drive sync or Wear OS sync (4d, 4i).</p>
 
-<h3>2f. Installed apps and app usage (optional)</h3>
-<p>Floatify can list the apps installed on your device so you can choose which apps' notifications become floats and give each app its own shape. If you grant Usage access, Floatify uses it to detect which app is currently in the foreground, so floats can behave correctly. This information stays on your device.</p>
+<h3>4b. App settings (stored locally)</h3>
+<p>Preferences such as bubble speed, quiet hours, vibration, shapes, per-app notification settings, your mode (Simple or Advanced) and the answers you give in the setup wizard (such as the type of notification user you picked, which only decides the suggested settings and the mood of the mascot Floaty) are stored locally. Pictures you pick for your own float shapes are copied into the app’s private storage and are not uploaded. If you enable Google Drive sync, your settings are included in the synced data.</p>
 
-<h3>2g. Sharing text, widgets and adding to your calendar app</h3>
-<p>Text you share to Floatify from another app is turned into a float on your device. Home screen widgets show your floats and to-dos from local data. The "add to calendar" action hands the float's title, description and time to your calendar app through Android's standard screen; you decide there whether to save it.</p>
+<h3>4c. Google account and Calendar (optional)</h3>
+<p>See section 3.</p>
 
-<h3>2h. Firebase Cloud Messaging (optional)</h3>
-<p>Floatify uses Firebase Cloud Messaging (FCM) to deliver push notifications related to calendar sync. FCM may transmit a device token to Google's servers for the purpose of delivering notifications. No personal content from your reminders is transmitted via FCM. Google's privacy policy applies: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+<h3>4d. Google Drive sync (optional, Advanced)</h3>
+<p>If you enable Drive sync, Floatify stores a copy of <em>your own floats</em> (the ones you created yourself, not calendar or notification floats) and your settings in the hidden <em>App Data folder</em> of your own Google Drive, so they can be shared between your devices. Only Floatify, signed in with your account, can read this folder. It does not appear in your normal Drive files and we have no access to it. Floatify requests only the Drive “app data” permission, not access to your other Drive files.</p>
 
-<h3>2i. Wear OS sync (optional)</h3>
-<p>If you pair Floatify with a Wear OS watch, reminder data is transmitted to your watch using the Wearable Data Layer API (Google Play Services). This transfer happens between your phone and watch. No data is sent to our servers.</p>
+<h3>4e. Notifications from other apps (optional, Advanced)</h3>
+<p>If you grant Notification access, Floatify can turn notifications of the apps <em>you select</em> into floats, for example chat messages. Floatify reads the notification content (such as sender, message text and attached images) on your device to show it in the float and to let you reply from the float. Replies are sent through the original app. Floatify also saves the profile photo that a chat app attaches to a notification (of a person or group) on your device, so it can be shown as the symbol of that chat’s floats. The names of chats you choose to block are kept on your device. This content is processed on your device only and is never sent to us or to any third party by Floatify. You can switch Notification access off at any time in Android settings.</p>
 
-<h3>2j. Advertising (Simple mode)</h3>
-<p>The Simple (free) version of Floatify shows an ad banner provided by <strong>Google AdMob</strong>. To show ads, Google may collect and use your device's advertising ID, IP address, device and app information, and information about ad interactions. In the European Economic Area and the United Kingdom, Floatify asks for your consent before ads are loaded, using Google's consent form, and you can change your choice later via "Ad privacy options" in Settings. You can also reset or delete your advertising ID in Android settings (Settings → Privacy → Ads). Buying Advanced removes the ad banner. Google's policies apply: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
+<h3>4f. Installed apps and app usage (optional)</h3>
+<p>Floatify can list the apps installed on your device so you can choose which apps’ notifications become floats and give each app its own shape. If you grant Usage access, Floatify uses it to detect which app is currently in the foreground, so floats can behave correctly. This information stays on your device.</p>
 
-<h3>2k. In-app purchase (Advanced)</h3>
-<p>Advanced is a one-time purchase handled entirely by Google Play. Payment details are processed by Google; Floatify never sees or stores your card or payment information. Floatify asks Google Play which purchases belong to your Google account in order to unlock Advanced (also after reinstalling), and stores a local flag on your device that Advanced is unlocked. The purchase is tied to your Google account.</p>
+<h3>4g. Contacts (optional, Advanced)</h3>
+<p>Floatify does not read your contacts list in general. Only if you switch on the call buttons on the float card, Floatify looks up the contact whose name matches the chat, to offer a (video) call in the chat app. Nothing from your contacts is stored, uploaded or shared.</p>
 
-<h2>3. Permissions Explained</h2>
+<h3>4h. Sharing text, files and widgets</h3>
+<p>Text you share to Floatify from another app is turned into a float on your device. Home screen widgets show your floats and to-dos from local data. Files you share to Floatify (pictures, documents and so on) are copied into the app’s private storage so they can be opened from the float; they are not uploaded and are not included in backups. Removing the float removes the copies.</p>
+
+<h3>4i. Wear OS sync (optional)</h3>
+<p>If you pair Floatify with a Wear OS watch, your floats are transmitted to your watch using the Wearable Data Layer API (Google Play Services). This transfer happens directly between your phone and watch. No data is sent to our servers.</p>
+
+<h3>4j. Firebase</h3>
+<p>Floatify includes Google Firebase components. Firebase may create an installation identifier and a push token for your device and exchange them with Google. Floatify does not use this to send your reminders, calendar data or notification content anywhere, and the released app does not use a server of its own for push messages. Google’s privacy information: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+
+<h3>4k. Advertising (Simple mode)</h3>
+<p>The Simple (free) version of Floatify shows an ad banner provided by <strong>Google AdMob</strong>. To show ads, Google may collect and use your device’s advertising ID, IP address, device and app information, and information about ad interactions. In the European Economic Area and the United Kingdom, Floatify asks for your consent before ads are loaded, using Google’s consent form, and you can change your choice later via “Ad privacy options” in Settings. You can reset or delete your advertising ID in Android settings (Settings → Privacy → Ads). Buying Advanced removes the ad banner. Google’s policies: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
+
+<h3>4l. In-app purchase (Advanced)</h3>
+<p>Advanced is a one-time purchase handled entirely by Google Play. Payment details are processed by Google; Floatify never sees or stores your card or payment information. Floatify asks Google Play which purchases belong to your Google account in order to unlock Advanced (also after reinstalling), and stores a local flag on your device. The purchase is tied to your Google account.</p>
+
+<h2>5. Permissions Explained</h2>
 <ul>
   <li><strong>Draw over other apps (SYSTEM_ALERT_WINDOW)</strong> — to display floating reminder bubbles on your screen.</li>
   <li><strong>Notifications (POST_NOTIFICATIONS)</strong> — to show reminder alerts.</li>
-  <li><strong>Notification access (BIND_NOTIFICATION_LISTENER_SERVICE)</strong> — optional; to turn notifications of apps you select into floats (see 2e).</li>
+  <li><strong>Notification access (BIND_NOTIFICATION_LISTENER_SERVICE)</strong> — optional; to turn notifications of apps you select into floats (see 4e).</li>
   <li><strong>Foreground service (FOREGROUND_SERVICE)</strong> — to keep floats active while the app is in the background.</li>
-  <li><strong>Exact alarms (SCHEDULE_EXACT_ALARM)</strong> — to trigger reminders at precisely the time you set.</li>
-  <li><strong>Receive boot (RECEIVE_BOOT_COMPLETED)</strong> — to restore your reminders automatically after a device restart.</li>
-  <li><strong>Query all packages (QUERY_ALL_PACKAGES)</strong> — to list your installed apps so you can choose which ones create floats and set a shape per app (see 2f).</li>
-  <li><strong>Usage access (PACKAGE_USAGE_STATS)</strong> — optional; to detect which app is in the foreground (see 2f).</li>
-  <li><strong>Calendar (WRITE_CALENDAR)</strong> — to add floats to your device calendar when you use the "add to calendar" action.</li>
-  <li><strong>Advertising ID (AD_ID)</strong> — used by Google AdMob to show ads in Simple mode (see 2j).</li>
-  <li><strong>Internet (INTERNET)</strong> — used for Google Calendar and Drive sync, Firebase notifications, Google Play purchases and ads.</li>
+  <li><strong>Exact alarms (SCHEDULE_EXACT_ALARM)</strong> — to trigger reminders at the time you set.</li>
+  <li><strong>Receive boot (RECEIVE_BOOT_COMPLETED)</strong> — to restore your reminders after a device restart.</li>
+  <li><strong>Query all packages (QUERY_ALL_PACKAGES)</strong> — to list your installed apps so you can choose which ones create floats and set a shape per app (see 4f).</li>
+  <li><strong>Usage access (PACKAGE_USAGE_STATS)</strong> — optional; to detect which app is in the foreground (see 4f).</li>
+  <li><strong>Calendar (READ_CALENDAR)</strong> — to check whether the event you added to your calendar through your calendar app was saved. Floatify does not write to your calendar with this permission; the event is saved in your calendar app, by you (see section 3).</li>
+  <li><strong>Contacts (READ_CONTACTS)</strong> — optional; only when you switch on the call buttons (see 4g).</li>
+  <li><strong>Advertising ID (AD_ID)</strong> — used by Google AdMob to show ads in Simple mode (see 4k).</li>
+  <li><strong>Internet (INTERNET)</strong> — used for Google Calendar and Drive, Firebase, Google Play purchases and ads.</li>
   <li><strong>Vibrate (VIBRATE)</strong> — to vibrate your device when a reminder appears (if enabled).</li>
-  <li><strong>Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)</strong> — to ensure reminders are not suppressed by the system when the screen is off.</li>
+  <li><strong>Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)</strong> — to help reminders not be suppressed by the system when the screen is off.</li>
   <li><strong>Wake lock (WAKE_LOCK)</strong> — to briefly wake the device when a reminder fires.</li>
 </ul>
 
-<h2>4. Data Sharing and Third Parties</h2>
+<h2>6. Data Sharing and Third Parties</h2>
 <p>We do not sell, trade, or otherwise transfer your data to third parties. The only third-party services involved are provided by <strong>Google LLC</strong>, and only for the features described above:</p>
 <ul>
   <li>Google Sign-In, Google Calendar API and Google Drive (when you connect your account).</li>
-  <li>Firebase Cloud Messaging and Wear OS data transfer (when you use these optional features).</li>
+  <li>Firebase and Wear OS data transfer.</li>
   <li>Google Play Billing (when you buy or restore Advanced).</li>
   <li>Google AdMob (ads in Simple mode, according to your consent where required).</li>
 </ul>
+<p>We do not use analytics or crash-reporting services of our own, and we do not use your data for profiling.</p>
 
-<h2>5. Data Retention and Deletion</h2>
-<p>Reminder and settings data is stored on your device. You can delete it at any time by going to <em>Settings → Apps → Floatify → Storage → Clear Data</em>, or by uninstalling the app. Clearing data does not remove your Advanced purchase; it is tied to your Google account and can be restored with "Restore purchase". If you used Drive sync, the copy in your Drive App Data folder stays until you delete it in Google Drive (Settings → Manage apps → Floatify → Delete hidden app data).</p>
+<h2>7. Data Retention and Deletion</h2>
+<p>Floats and settings are stored on your device. You can delete them at any time by going to <em>Settings → Apps → Floatify → Storage → Clear Data</em>, or by uninstalling the app; this also removes all imported calendar events from the device. Clearing data does not remove your Advanced purchase; it is tied to your Google account and can be restored with “Restore purchase”. If you used Drive sync, the copy in your Drive App Data folder stays until you delete it in Google Drive (Settings → Manage apps → Floatify → Delete hidden app data). Because we do not hold your data on our own servers, there is nothing to delete on our side.</p>
 
-<h2>6. Revoking Access</h2>
-<p>If you have connected a Google account, you can revoke Floatify's access at any time at <a href="https://myaccount.google.com/permissions" target="_blank">https://myaccount.google.com/permissions</a>. Notification access and Usage access can be turned off in Android settings.</p>
+<h2>8. Revoking Access</h2>
+<p>You can disconnect Google Calendar and Drive inside the app, and revoke Floatify’s access to your Google account at any time at <a href="https://myaccount.google.com/permissions" target="_blank">https://myaccount.google.com/permissions</a>. Notification access, Usage access and the other permissions can be turned off in Android settings.</p>
 
-<h2>7. Children's Privacy</h2>
+<h2>9. Security</h2>
+<p>Data on your device is kept in the app’s private storage, which other apps cannot read under normal Android security. Connections to Google services are encrypted. No system is perfectly secure, so please also protect your device with a screen lock.</p>
+
+<h2>10. Your Rights</h2>
+<p>Because your data stays on your device or in your own Google account, you can view, change and delete it yourself. If you are in the European Economic Area or the UK you also have the rights of access, correction, deletion, restriction, portability and objection. For anything we can help with, contact us at the address below.</p>
+
+<h2>11. Children’s Privacy</h2>
 <p>Floatify is not directed at children under the age of 13. We do not knowingly collect personal data from children.</p>
 
-<h2>8. Changes to This Policy</h2>
+<h2>12. Not for Medical or Critical Reminders</h2>
+<p>Floatify is not intended for medical or critical reminders, and there is no guarantee that notifications are always delivered. See the <a href="terms.html">Terms of Use</a>.</p>
+
+<h2>13. Changes to This Policy</h2>
 <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated date. Continued use of the app after changes are posted constitutes your acceptance of the updated policy.</p>
 
-<h2>9. Contact</h2>
+<h2>14. Contact</h2>
 <p>For questions or concerns about this privacy policy, please contact:<br>
 Mark Bruining<br>
 <a href="mailto:schurkiedev@gmail.com">schurkiedev@gmail.com</a></p>
