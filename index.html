@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Floatify – messages that float until you're done</title>
+<meta name="description" content="Floatify turns the notifications you choose into small floating bubbles over your other apps. Read, reply and snooze right from the bubble. Free to install on Android.">
+<link rel="canonical" href="https://schurkie.github.io/">
+<meta name="theme-color" content="#0AB0B0">
+<link rel="icon" type="image/png" sizes="32x32" href="FloatifyNotifications/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="FloatifyNotifications/assets/img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Floatify">
+<meta property="og:title" content="Floatify – messages that float until you're done">
+<meta property="og:description" content="Floatify turns the notifications you choose into small floating bubbles over your other apps. Read, reply and snooze right from the bubble.">
+<meta property="og:url" content="https://schurkie.github.io/">
+<meta property="og:image" content="https://schurkie.github.io/FloatifyNotifications/assets/img/og-image.png">
+<style>
+:root {
+  --bg: #ffffff;
+  --fg: #1c2530;
+  --muted: #55606c;
+  --brand: #0a8f8f;
+  --card: #eef8f8;
+  --line: #d6e4e4;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12181d;
+    --fg: #e8eef2;
+    --muted: #a3afba;
+    --brand: #3ec9c9;
+    --card: #1a2429;
+    --line: #2a3840;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+header { padding: 32px 0 8px; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.brand img { width: 56px; height: 56px; border-radius: 14px; }
+.brand h1 { margin: 0; font-size: 2rem; line-height: 1.1; }
+.lead { font-size: 1.25rem; margin: 20px 0 8px; }
+p { margin: 0 0 14px; }
+.muted { color: var(--muted); }
+h2 { font-size: 1.2rem; margin: 36px 0 10px; color: var(--brand); }
+ul { margin: 0 0 14px; padding-left: 22px; }
+li { margin-bottom: 6px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; margin: 20px 0; }
+.play img { height: 64px; width: auto; display: block; }
+a { color: var(--brand); }
+footer { border-top: 1px solid var(--line); margin-top: 40px; padding: 20px 0 40px; font-size: 0.95rem; }
+footer a { margin-right: 16px; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="brand">
+    <img src="FloatifyNotifications/assets/img/logo-192.png" width="56" height="56" alt="">
+    <h1>Floatify</h1>
+  </div>
+  <p class="lead">Messages that float until you're done with them.</p>
+</header>
+
+<main>
+  <p>Floatify is an Android app that turns the notifications you choose into small floating bubbles over your other apps. A bubble stays on your screen until you have dealt with it: tap it to read the message, reply from the bubble, snooze it for later, or dock it at the edge of the screen.</p>
+
+  <p class="play"><a class="play" href="https://play.google.com/store/apps/details?id=com.bubblefication.bubblefication"><img src="FloatifyNotifications/assets/badges/google-play-en.png" alt="Get it on Google Play"></a></p>
+
+  <h2>What Floatify does</h2>
+  <ul>
+    <li><strong>Floats from app notifications.</strong> Choose which apps (for example chat apps) may create a float. Floatify reads those notifications only to make the float.</li>
+    <li><strong>Reply, snooze, dock.</strong> Answer a chat message right from the float, snooze it for a few minutes, or park it at the edge of the screen.</li>
+    <li><strong>Your own floats.</strong> Write a reminder and keep it floating on screen until you finish it.</li>
+    <li><strong>Google Calendar (optional).</strong> Sign in with your Google account to turn upcoming events from the calendars you choose into floats. This is optional; Floatify works without it.</li>
+    <li><strong>Backup (optional).</strong> Save your floats and settings to a folder, or to the private app folder in your own Google Drive.</li>
+    <li><strong>Simple or Advanced.</strong> Simple is one switch per app. Advanced adds your own floats, Google Calendar, shapes and themes.</li>
+  </ul>
+
+  <div class="card">
+    <strong>Your privacy.</strong> Floatify keeps your floats on your phone and has no servers of its own that store your data. Read the full <a href="privacy_policy.html">privacy policy</a> and the <a href="terms.html">terms of use</a>.
+  </div>
+
+  <p class="muted">Floatify is made by Mark Bruining. Questions or suggestions: <a href="mailto:schurkiedev@gmail.com">schurkiedev@gmail.com</a>.</p>
+</main>
+
+<footer>
+  <a href="FloatifyNotifications/">Full Floatify website</a>
+  <a href="privacy_policy.html">Privacy policy</a>
+  <a href="terms.html">Terms of use</a>
+</footer>
+
+</div>
+</body>
+</html>
