@@ -31,7 +31,7 @@
 <body>
 
 <h1>Floatify – Privacy Policy</h1>
-<p class="updated">Last updated: November 9, 2026</p>
+<p class="updated">Last updated: November 20, 2026</p>
 
 <div class="highlight">
   <strong>In short</strong>
@@ -39,6 +39,7 @@
     <li>Your reminders and settings are stored <strong>on your device</strong>. We do not run a server that receives them, and we do not sell your data.</li>
     <li><strong>Calendar data is processed only on your device.</strong> Events are fetched from Google Calendar straight to your phone and stay there. They are never sent to us or to any other third party (see section 3).</li>
     <li>Everything that involves Google (Calendar, Drive, Play, AdMob, Firebase) only happens when you use the feature that needs it.</li>
+    <li><strong>Anonymous usage statistics and crash reports are optional and off by default.</strong> They are only sent if you say yes, and you can switch them off at any time in Settings → About (see section 4m).</li>
     <li>You can switch every optional feature off, and remove all data by clearing the app’s data or uninstalling it.</li>
   </ul>
 </div>
@@ -54,7 +55,8 @@
   <tr><td>Notifications of other apps (chat messages, photos, contact names)</td><td>Yes, only local</td><td>Never. When you reply, the reply goes through the original app.</td></tr>
   <tr><td>Files and text you share to Floatify</td><td>Yes, only local</td><td>Never.</td></tr>
   <tr><td>Contacts</td><td>Not stored</td><td>Never. Only looked up on the device for the optional call buttons.</td></tr>
-  <tr><td>Advertising data (Simple mode)</td><td>No</td><td>Google AdMob collects it to show ads, according to your consent where required.</td></tr>
+  <tr><td>Advertising data (Simple mode and Advanced with ads)</td><td>No</td><td>You use Simple, or Advanced for free with ads. Google AdMob then collects it to show ads (banner, in-list ad, app-open ad), according to your consent where required. Not collected if you bought Advanced or during the free trial.</td></tr>
+  <tr><td>Anonymous usage statistics and crash reports (optional)</td><td>No</td><td>You choose “Yes, share anonymously” (setup wizard, a one-time card, or Settings → About). Sent to Google Firebase (Analytics and Crashlytics). Never contains float titles or texts, notification content or names. Off by default; see section 4m.</td></tr>
   <tr><td>Purchase of Advanced</td><td>Local flag only</td><td>Handled by Google Play.</td></tr>
 </table>
 
@@ -94,7 +96,7 @@
 <p>If you grant Notification access, Floatify can turn notifications of the apps <em>you select</em> into floats, for example chat messages. Floatify reads the notification content (such as sender, message text and attached images) on your device to show it in the float and to let you reply from the float. Replies are sent through the original app. Floatify also saves the profile photo that a chat app attaches to a notification (of a person or group) on your device, so it can be shown as the symbol of that chat’s floats. The names of chats you choose to block are kept on your device. This content is processed on your device only and is never sent to us or to any third party by Floatify. You can switch Notification access off at any time in Android settings.</p>
 
 <h3>4f. Installed apps and app usage (optional)</h3>
-<p>Floatify can list the apps installed on your device so you can choose which apps’ notifications become floats and give each app its own shape. If you grant Usage access, Floatify uses it to detect which app is currently in the foreground, so floats can behave correctly. This information stays on your device.</p>
+<p>Floatify can list the apps installed on your device so you can choose which apps’ notifications become floats and give each app its own shape. If you grant Usage access, Floatify uses it to detect which app is currently in the foreground, so floats can behave correctly. This information stays on your device. The only exception is the optional usage statistics in section 4m: if you opt in, Floatify can report that you linked a well-known app from a fixed list inside Floatify (for example a popular chat or mail app); every other app is reported only as “other”. The full list of your installed apps is never sent.</p>
 
 <h3>4g. Contacts (optional, Advanced)</h3>
 <p>Floatify does not read your contacts list in general. Only if you switch on the call buttons on the float card, Floatify looks up the contact whose name matches the chat, to offer a (video) call in the chat app. Nothing from your contacts is stored, uploaded or shared.</p>
@@ -106,13 +108,45 @@
 <p>If you pair Floatify with a Wear OS watch, your floats are transmitted to your watch using the Wearable Data Layer API (Google Play Services). This transfer happens directly between your phone and watch. No data is sent to our servers.</p>
 
 <h3>4j. Firebase</h3>
-<p>Floatify includes Google Firebase components. Firebase may create an installation identifier and a push token for your device and exchange them with Google. Floatify does not use this to send your reminders, calendar data or notification content anywhere, and the released app does not use a server of its own for push messages. Google’s privacy information: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
+<p>Floatify includes Google Firebase components. Firebase may create an installation identifier and a push token for your device and exchange them with Google. If you opt in to usage statistics and crash reports, Firebase Analytics and Firebase Crashlytics are also used (see section 4m). Floatify does not use this to send your reminders, calendar data or notification content anywhere, and the released app does not use a server of its own for push messages. Google’s privacy information: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></p>
 
-<h3>4k. Advertising (Simple mode)</h3>
-<p>The Simple (free) version of Floatify shows an ad banner provided by <strong>Google AdMob</strong>. To show ads, Google may collect and use your device’s advertising ID, IP address, device and app information, and information about ad interactions. In the European Economic Area and the United Kingdom, Floatify asks for your consent before ads are loaded, using Google’s consent form, and you can change your choice later via “Ad privacy options” in Settings. You can reset or delete your advertising ID in Android settings (Settings → Privacy → Ads). Buying Advanced removes the ad banner. Google’s policies: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
+<h3>4k. Advertising (Simple mode and Advanced with ads)</h3>
+<p>Floatify is free to use with ads, in two ways: in <strong>Simple</strong> mode, and in <strong>Advanced</strong> when you choose “Free with ads” instead of buying it. Ads are provided by <strong>Google AdMob</strong> and appear in these forms:</p>
+<ul>
+  <li>an <strong>ad banner</strong> at the bottom of the app (Simple and Advanced with ads);</li>
+  <li>an <strong>inline ad</strong> in the list of floats and between the settings (Advanced with ads only);</li>
+  <li>an <strong>app-open ad</strong> when you open Floatify, after Floatify has shown 10 floats, and at most once every 4 hours (Advanced with ads only).</li>
+</ul>
+<p>To show ads, Google may collect and use your device’s advertising ID, IP address, device and app information, and information about ad interactions. In the European Economic Area and the United Kingdom, Floatify asks for your consent before ads are loaded, using Google’s consent form, and you can change your choice later via “Ad privacy options” in Settings. You can reset or delete your advertising ID in Android settings (Settings → Privacy → Ads). Buying Advanced removes all ads, and no ads are shown during the free trial of Advanced. Google’s policies: <a href="https://policies.google.com/technologies/ads" target="_blank">https://policies.google.com/technologies/ads</a></p>
 
 <h3>4l. In-app purchase (Advanced)</h3>
 <p>Advanced is a one-time purchase handled entirely by Google Play. Payment details are processed by Google; Floatify never sees or stores your card or payment information. Floatify asks Google Play which purchases belong to your Google account in order to unlock Advanced (also after reinstalling), and stores a local flag on your device. The purchase is tied to your Google account.</p>
+
+<h3>4m. Usage statistics and crash reports (optional)</h3>
+<div class="highlight">
+  <strong>Off by default.</strong> Floatify sends anonymous usage statistics and crash reports only after you say yes: in the setup wizard, on a one-time card on the main screen, or with the switch “Share anonymous usage and crash data” in Settings → About. Until you choose, nothing is sent, and “No” is a fully valid choice.
+</div>
+<p>If you opt in, Floatify uses <strong>Google Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> to learn which parts of the app are used and to find and fix crashes. This is separate from advertising.</p>
+<p><strong>What is sent when you opt in:</strong></p>
+<ul>
+  <li>which screens and dialogs you open;</li>
+  <li>which settings you change, and the new value, but only for a fixed list of settings in Floatify (never free text);</li>
+  <li>your colour choice per app (floats on, off, or visible while the app is open);</li>
+  <li>actions on floats, such as snooze, dismiss, open chat, reply, like or call (the action only, never its content);</li>
+  <li>once a day, a snapshot of your main settings from the same fixed list;</li>
+  <li>the number of linked apps and, for an app you linked, its name, only if it is a well-known app from a fixed list inside Floatify; any other app is reported as “other”;</li>
+  <li>steps around Advanced, the free trial and ads (for example “trial started” or “purchase completed”);</li>
+  <li>crash reports (technical information about the crash, such as the error, the app version, and the Android version and device model).</li>
+</ul>
+<p><strong>What is never sent:</strong> titles or texts of floats, notification content, names of contacts, chats or groups, calendar data, email, files, pictures, your Google account, or your list of installed apps.</p>
+<ul>
+  <li><strong>Anonymous.</strong> Floatify does not set a user ID and does not link this data to your name, account or contact details. Firebase uses a random app-instance identifier for the app on your device.</li>
+  <li><strong>Separate from advertising.</strong> Floatify does not link this data to your advertising ID, does not use Google Signals, and does not use it for ad personalisation.</li>
+  <li><strong>Your choice at any time.</strong> Switching the option off in Settings → About stops sending immediately and deletes the analytics identifier on your device, so a new random identifier is used if you switch it on again. Data already sent stays in Firebase for the retention period below.</li>
+  <li><strong>Processor and retention.</strong> Google (Firebase) processes this data on our behalf. It is kept according to the retention setting of the Firebase project (Google Analytics offers 2 or 14 months for event data). Google’s privacy information: <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
+  <li><strong>Debug builds</strong> used during development do not send this data.</li>
+</ul>
+<p>The legal basis is your consent (Article 6(1)(a) GDPR), which you can withdraw at any time as described above.</p>
 
 <h2>5. Permissions Explained</h2>
 <ul>
@@ -126,8 +160,8 @@
   <li><strong>Usage access (PACKAGE_USAGE_STATS)</strong> — optional; to detect which app is in the foreground (see 4f).</li>
   <li><strong>Calendar (READ_CALENDAR)</strong> — to check whether the event you added to your calendar through your calendar app was saved. Floatify does not write to your calendar with this permission; the event is saved in your calendar app, by you (see section 3).</li>
   <li><strong>Contacts (READ_CONTACTS)</strong> — optional; only when you switch on the call buttons (see 4g).</li>
-  <li><strong>Advertising ID (AD_ID)</strong> — used by Google AdMob to show ads in Simple mode (see 4k).</li>
-  <li><strong>Internet (INTERNET)</strong> — used for Google Calendar and Drive, Firebase, Google Play purchases and ads.</li>
+  <li><strong>Advertising ID (AD_ID)</strong> — used by Google AdMob to show ads in Simple mode and in Advanced with ads (see 4k). Not used for usage statistics (see 4m).</li>
+  <li><strong>Internet (INTERNET)</strong> — used for Google Calendar and Drive, Firebase (including optional usage statistics and crash reports), Google Play purchases and ads.</li>
   <li><strong>Vibrate (VIBRATE)</strong> — to vibrate your device when a reminder appears (if enabled).</li>
   <li><strong>Ignore battery optimizations (REQUEST_IGNORE_BATTERY_OPTIMIZATIONS)</strong> — to help reminders not be suppressed by the system when the screen is off.</li>
   <li><strong>Wake lock (WAKE_LOCK)</strong> — to briefly wake the device when a reminder fires.</li>
@@ -137,14 +171,14 @@
 <p>We do not sell, trade, or otherwise transfer your data to third parties. The only third-party services involved are provided by <strong>Google LLC</strong>, and only for the features described above:</p>
 <ul>
   <li>Google Sign-In, Google Calendar API and Google Drive (when you connect your account).</li>
-  <li>Firebase and Wear OS data transfer.</li>
+  <li>Firebase (installation identifier and, only if you opt in, anonymous usage statistics and crash reports through Firebase Analytics and Crashlytics) and Wear OS data transfer.</li>
   <li>Google Play Billing (when you buy or restore Advanced).</li>
-  <li>Google AdMob (ads in Simple mode, according to your consent where required).</li>
+  <li>Google AdMob (ads in Simple mode and in Advanced with ads, according to your consent where required).</li>
 </ul>
-<p>We do not use analytics or crash-reporting services of our own, and we do not use your data for profiling.</p>
+<p>Anonymous usage statistics and crash reports are optional, off by default, and only sent after you opt in (see section 4m). We do not run an analytics or crash-reporting server of our own, we do not use any other analytics provider, and we do not use your data for profiling.</p>
 
 <h2>7. Data Retention and Deletion</h2>
-<p>Floats and settings are stored on your device. You can delete them at any time by going to <em>Settings → Apps → Floatify → Storage → Clear Data</em>, or by uninstalling the app; this also removes all imported calendar events from the device. Clearing data does not remove your Advanced purchase; it is tied to your Google account and can be restored with “Restore purchase”. If you used Drive sync, the copy in your Drive App Data folder stays until you delete it in Google Drive (Settings → Manage apps → Floatify → Delete hidden app data). Because we do not hold your data on our own servers, there is nothing to delete on our side.</p>
+<p>Floats and settings are stored on your device. You can delete them at any time by going to <em>Settings → Apps → Floatify → Storage → Clear Data</em>, or by uninstalling the app; this also removes all imported calendar events from the device. Clearing data does not remove your Advanced purchase; it is tied to your Google account and can be restored with “Restore purchase”. If you used Drive sync, the copy in your Drive App Data folder stays until you delete it in Google Drive (Settings → Manage apps → Floatify → Delete hidden app data). Because we do not hold your data on our own servers, there is nothing to delete on our side. If you opted in to usage statistics and crash reports, you can switch them off in Settings → About; data already sent is kept in Firebase only for the project’s retention period and cannot be linked back to you by name.</p>
 
 <h2>8. Revoking Access</h2>
 <p>You can disconnect Google Calendar and Drive inside the app, and revoke Floatify’s access to your Google account at any time at <a href="https://myaccount.google.com/permissions" target="_blank">https://myaccount.google.com/permissions</a>. Notification access, Usage access and the other permissions can be turned off in Android settings.</p>
